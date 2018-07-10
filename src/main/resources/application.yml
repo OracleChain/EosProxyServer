@@ -1,0 +1,15 @@
+server:
+  port: 8080
+spring:
+  redis:
+    host: redis_server_ip
+    port: 6379
+    database: 0
+    password: redis_passwd
+    timeout: 3000
+    jedis:
+      pool:
+        max-active: 10
+        max-idle: 5
+        min-idle: 1
+        max-wait: 5000
