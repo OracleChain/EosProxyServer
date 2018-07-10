@@ -27,7 +27,7 @@
    
 &emsp;&emsp;Now we opensourced our backend servers too(apply to blackbox mode).      
 
-&emsp;&emsp;我们把PocketEOS的后端代码也开源出来了，大家可以自行编译使用。
+&emsp;&emsp;现在，我们把PocketEOS的后端代码也开源出来（适用于黑匣子模式），大家可以自行编译使用。
 
 ------------------------------
 <h2 id="2">ENVIRONMENT/开发和使用环境</h2>
