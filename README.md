@@ -41,7 +41,7 @@
 &emsp;3. download our git repository.
 >`git clone https://github.com/OracleChain/PocketEOS-ShieldServer.git`
 
-&emsp;4. import the project
+&emsp;4. import the project with IntelliJ IDEA
 
 &emsp;5. edit redis server configuration in src/main/resources/application.yml.
 
@@ -66,6 +66,8 @@
 &emsp;2. download our git repository.
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git`
+
+&emsp;3. import the project and run it.
 
 &emsp;MACOS
 
