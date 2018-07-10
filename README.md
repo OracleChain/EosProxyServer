@@ -63,7 +63,7 @@
 
 &emsp;1. install Android Studio 3.0以上 + jdk1.8 +gradle 4.1
 
-&emsp;2. download our git repository.
+&emsp;2. clone our git repository.
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git`
 
