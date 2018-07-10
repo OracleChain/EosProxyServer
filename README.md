@@ -84,10 +84,17 @@
 
 **DEPENDENCYS/依赖库:**
 
-&emsp;our ECDSA and blockchain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the PLACTAL.io team
+&emsp;our JAVA code of ECDSA and blockchain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the PLACTAL.io team
 
-&emsp;我们的椭圆曲线算法及blockchain工具类，来自于[EOSCommander](https://github.com/plactal/EosCommander)，感谢PLACTAL.io为社区的付出。
+&emsp;JAVA语言版的椭圆曲线算法及blockchain工具类，来自于[EOSCommander](https://github.com/plactal/EosCommander)，感谢PLACTAL.io为社区的付出。
 
+&emsp;our C code of ECDSA is based on micro-ecc.And OracleChain build a Publicly Verifiable Secret Sharing on secp256k1 which is published by Schoenmakers on crypto99 conference.
+
+&emsp;&emsp;C语言版的椭圆曲线算法实现来自micro-ecc，欧链在椭圆曲线secp256k1上实现了Schoenmakers在crypto99上提出的Publicly Verifiable Secret Sharing
+
+&emsp;&emsp;https://github.com/kmackay/micro-ecc
+
+&emsp;&emsp;https://github.com/songgeng87/PubliclyVerifiableSecretSharing
 
 **Any questions pls join our official Telegram Group below/相关问题反馈，请加欧链官方Telegram群组:**
 
