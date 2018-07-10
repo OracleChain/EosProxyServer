@@ -25,7 +25,7 @@
 
 &emsp;&emsp;口袋里的EOS世界大门，将区块链生活随身携带！
    
-&emsp;&emsp;Now we opensourced our backend servers too(apply to blackbox mode).      
+&emsp;&emsp;Now we opensourced our backend server too(apply to blackbox mode).      
 
 &emsp;&emsp;现在，我们把PocketEOS的后端代码也开源出来（适用于黑匣子模式），大家可以自行编译使用。
 
