@@ -1,7 +1,7 @@
 
 # About/关于
 
-**PocketEOS-ShieldServer** is an backend of PocketEOS（blackbox mode）,which is developed by [OracleChain.io](https://oraclechain.io).
+**PocketEOS-ShieldServer** is the backend server of PocketEOS（blackbox mode）,which is developed by [OracleChain.io](https://oraclechain.io).
 
 **PocketEOS-ShieldServer**是一个PocketEOS的后端服务器（黑盒模式），由[OracleChain团队](https://oraclechain.io)研发。
 
