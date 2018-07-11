@@ -1,4 +1,4 @@
-[中文版](https://github.com/OracleChain/PocketEOS-ShieldServer/blob/master/READM-cn.md)
+[中文版](https://github.com/OracleChain/PocketEOS-ShieldServer/blob/master/README-cn.md)
 
 # About
 
@@ -41,6 +41,8 @@
 &emsp;5. edit redis server configuration in src/main/resources/application.yml.
 
 >`host: redis_server_ip`
+
+>`port: 6379`
 
 >`password: redis_passwd`
 
