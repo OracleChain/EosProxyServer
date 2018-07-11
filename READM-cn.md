@@ -42,6 +42,8 @@
 
 >`host: redis_server_ip`
 
+>`port: 6379`
+
 >`password: redis_passwd`
 
 &emsp;6. edit server transaction parameters in src/main/java/com/oraclechain/eosio/constants/Variables.java.
