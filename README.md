@@ -9,10 +9,10 @@
 # Menu
 + [Overview](#1)
 + [ENVIRONMENT](#2)
-+ [ExceptionHandling](#3)
-+ [ContractErrorCodeSpecification](#4)
-+ [AddYourTokenAsset](#5)
-+ [ServerTransaction](#6)
++ [Exception Handling](#3)
++ [Contract Error Code Specification](#4)
++ [Add Your Token Asset](#5)
++ [Server Transaction](#6)
 + [About OracleChain](#7)
 + [LICENSE](#8)
 
@@ -105,7 +105,7 @@
 
 ------------------------------
 
-<h2 id="3">ExceptionHandling</h2>
+<h2 id="3">Exception Handling</h2>
 
 ### FC Layer Exceptions
 
@@ -113,21 +113,21 @@
 
 ------------------------------
 
-<h2 id="4">ContractErrorCodeSpecification</h2>
+<h2 id="4">Contract Error Code Specification</h2>
 
 ### Contract Layer Exceptions Specification
 
 
 ------------------------------
 
-<h2 id="5">AddYourTokenAsset</h2>
+<h2 id="5">Add Your Token Asset</h2>
 
 ### How to add your own token
 
 
 ------------------------------
 
-<h2 id="6">ServerTransaction</h2>
+<h2 id="6">Server Transaction</h2>
 
 ### Make server side transactions
 
