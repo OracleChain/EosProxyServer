@@ -56,7 +56,7 @@
 
 **Compile PocketEOS client from source code：**
 
-&emsp;Android
+&emsp;Compiling Android client:
 
 &emsp;1. install Android Studio 3.0以上 + jdk1.8 +gradle 4.1
 
@@ -68,7 +68,7 @@
 
 &emsp;4. import the project and run it.
 
-&emsp;MACOS
+&emsp;Compiling IOS client:
 
 &emsp;1. install XCODE 8.0
 
