@@ -5,7 +5,7 @@
 
 -------------------------------
 
-# Menu/目录
+# 目录
 + [简介](#1)
 + [开发和使用环境](#2)
 + [异常捕获](#3)
@@ -51,7 +51,7 @@
 
 &emsp;7. Run it.
 
-**Compile PocketEOS client from source code/如何从源码编译PocketEOS客户端：**
+**如何从源码编译PocketEOS客户端：**
 
 &emsp;Android
 
