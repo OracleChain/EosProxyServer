@@ -33,7 +33,7 @@
 
 &emsp;2. install IntelliJ IDEA + jdk1.8 + maven 4.0.0
 
-&emsp;3. download our git repository.
+&emsp;3. clone our git repository.
 >`git clone https://github.com/OracleChain/PocketEOS-ShieldServer.git`
 
 &emsp;4. import the project with IntelliJ IDEA
