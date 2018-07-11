@@ -1,4 +1,4 @@
-[ENGLISH ](https://github.com/OracleChain/PocketEOS-ShieldServer/blob/master/READM.md)
+[ENGLISH VERSION](https://github.com/OracleChain/PocketEOS-ShieldServer/blob/master/READM.md)
 
 # 关于
 
