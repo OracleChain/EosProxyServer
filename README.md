@@ -1,3 +1,4 @@
+![中文版](https://github.com/OracleChain/PocketEOS-ShieldServer/blob/master/READM-cn.md)
 
 # About
 
