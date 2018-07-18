@@ -119,7 +119,7 @@ In EOS code base, the exceptions were handled in three layers.
 
 2.the CHAIN layer, handling EOS chain logic exceptions.
 
-3.In the CONTRACT layer, we can standardize a general error code specification in your contract code. And it's optional to additional error code handling specific situations.
+3.In the CONTRACT layer, we can standardize a general error code specification in your contract code. And it's optional to add additional error code handling specific situations.
 
 ### FC Layer Exceptions
 
