@@ -111,15 +111,27 @@ ENGLISH GROUP：https://t.me/OracleChainChat
 
 为了给客户端提供一个稳定使用环境、平滑的版本切换、统一的错误定位和提示，我们全局捕获了EOS RPC接口中的异常，并且针对各种错误接口调用进行了封装。
 
+We provide client a more stable environment, smooth version upgrading, universal error exceptions with resolving all EOS exceptions into one standard.
+
 通过返回完全可靠的错误代码，客户端就可以根据欧链定制的错误代码集，进行国际化，并且和EOS升级前后版本进行兼容。
+
+With the univeral error exceptions, you can make internationalized error tips for users.
 
 EOS代码中，异常主要分为三层：
 
-第一层为FC exceptions，主要处理graphene FC工具类产生的异常。
+In EOS code base, the exceptions were handled in three layers.
 
-第二层为CHAIN exceptions，主要处理EOS逻辑代码中的异常。
+第一层为FC layer，主要处理graphene FC工具类产生的异常。
 
-第三层为contract exceptions，可在合约中形成规范，除了给用户提供统一的错误代码，并且可定制一些适用于特定合约的特定错误代码。
+1.the FC layer, handling the graphene tool exceptions.
+
+第二层为CHAIN layer，主要处理EOS逻辑代码中的异常。
+
+2.the CHAIN layer, handling EOS chain logic exceptions.
+
+第三层为contract layer，可在合约中形成规范，除了给用户提供统一的错误代码外，还可定制一些适用于特定合约的特定错误代码。
+
+3.In the CONTRACT layer, we can standardize a general error code specification in your contract code. And it's optional to additional error code handling specific situations.
 
 ### FC Layer Exceptions
 
@@ -278,6 +290,7 @@ EOS中的主要错误都是CHAIN exception，这里我们对错误代码进行�
 <h2 id="4">Contract Error Code Specification</h2>
 
 ### Contract Layer Exceptions Specification
+
 
 
 ------------------------------
