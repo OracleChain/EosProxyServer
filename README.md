@@ -152,7 +152,7 @@ We unified the error code with a offset of 3990000.
 
 ### Chain Layer Exceptions
 
-Most of the exceptions were [CHAIN exceptions](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/exceptions.hpp), and we using it directly with some self defined code.
+When dealing with EOS blockchain rpc service, most of the exceptions were [CHAIN exceptions](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/exceptions.hpp), and we using it directly with some self defined code.
 
     //自定义区
     unknown_error_exception(3900000, "server error, please try again later"),
