@@ -64,9 +64,9 @@ Compiling Android client:
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git`
 
-&emsp;3. change the configuration of backend server address according to your local PocketEOS-ShieldServer.
+&emsp;3. import the project and change the configuration of backend server address according to your local PocketEOS-ShieldServer.
 
-&emsp;4. import the project and run it.
+&emsp;4. run it.
 
 Compiling IOS client:
 
@@ -76,9 +76,9 @@ Compiling IOS client:
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-IOS.git`
 
-&emsp;3. change the configuration of backend server address according to your local PocketEOS-ShieldServer.
+&emsp;3. import the project and change the configuration of backend server address according to your local PocketEOS-ShieldServer.
 
-&emsp;4. import the project and run `command + R`
+&emsp;4. run `command + R`
 
 **CLIENT DOWNLOAD & TRY**
 
