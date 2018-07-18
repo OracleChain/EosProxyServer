@@ -29,16 +29,16 @@
 
 **如何从源码编译服务器：**
 
-1. prepare a redis server for data cache of token rates
+1. 准备一个redis服务器用于缓存第三方汇率
 
-2. install IntelliJ IDEA + jdk1.8 + maven 4.0.0
+2. 安装IntelliJ IDEA + jdk1.8 + maven 4.0.0
 
-3. clone our git repository.
+3. 下载我们的repo
 >`git clone https://github.com/OracleChain/PocketEOS-ShieldServer.git`
 
-4. import the project with IntelliJ IDEA
+4. 使用IntelliJ IDEA导入到工程
 
-5. edit redis server configuration in src/main/resources/application.yml.
+5. 编辑服务器配置文件 src/main/resources/application.yml.
 
 >`host: redis_server_ip`
 
@@ -46,39 +46,39 @@
 
 >`password: redis_passwd`
 
-6. edit server transaction parameters in src/main/java/com/oraclechain/eosio/constants/Variables.java.
+6. 编辑服务器主动交易相关参数 src/main/java/com/oraclechain/eosio/constants/Variables.java.
 
 >`public static final String eosAccount = "tx_account_name";`
 
 >`public static final String eosPrivateKey = "tx_private_key";`
 
-7. Run it.
+7. 编译运行.
 
 **如何从源码编译PocketEOS客户端：**
 
-Compiling Android client:
+如何编译安卓客户端:
 
-&emsp;1. install Android Studio 3.0以上 + jdk1.8 +gradle 4.1
+&emsp;1. 安装Android Studio 3.0以上 + jdk1.8 +gradle 4.1
 
-&emsp;2. clone our git repository.
+&emsp;2. 下载repo
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git`
 
-&emsp;3. change the configuration of backend server address according to your local PocketEOS-ShieldServer.
+&emsp;3. 导入工程，并且根据你启动PocketEOS-ShieldServer地址，修改服务器配置文件.
 
-&emsp;4. import the project and run it.
+&emsp;4. 编译运行.
 
-Compiling IOS client:
+如何编译IOS客户端:
 
-&emsp;1. install XCODE 8.0
+&emsp;1. 安装 XCODE 8.0
 
-&emsp;2. clone our git repository:
+&emsp;2. 下载repo:
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-IOS.git`
 
-&emsp;3. change the configuration of backend server address according to your local PocketEOS-ShieldServer.
+&emsp;3. 导入工程，并且根据你启动PocketEOS-ShieldServer地址，修改服务器配置文件.
 
-&emsp;4. import the project and run `command + R`
+&emsp;4. 使用`command + R` 编译运行
 
 **客户端下载试用**
 
@@ -103,7 +103,7 @@ JAVA语言版的椭圆曲线算法及blockchain工具类，来自于[EOSCommande
 
 中文群：https://t.me/OracleChainChatCN
 
-ENGLISH GROUP：https://t.me/OracleChainChat
+英文群：https://t.me/OracleChainChat
 
 ------------------------------
 
