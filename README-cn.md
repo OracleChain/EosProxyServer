@@ -80,10 +80,6 @@
 
 &emsp;4. 使用`command + R` 编译运行
 
-**客户端下载试用**
-
-[PocketEOS](https://pocketeos.com/)
-
 
 **依赖库:**
 
