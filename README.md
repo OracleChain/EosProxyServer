@@ -82,7 +82,7 @@ Compiling IOS client:
 
 **CLIENT DOWNLOAD & TRY**
 
-&emsp;[PocketEOS](https://pocketeos.com/)
+[PocketEOS](https://pocketeos.com/)
 
 
 **DEPENDENCYS:**
