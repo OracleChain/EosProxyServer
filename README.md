@@ -101,7 +101,7 @@ Our JAVA code of ECDSA and blockchain utility are based on the source code of [E
 
 **Any questions pls join our official Telegram Group below:**
 
-中文群：https://t.me/OracleChainChatCN
+CHINESE GROUP：https://t.me/OracleChainChatCN
 
 ENGLISH GROUP：https://t.me/OracleChainChat
 
