@@ -111,7 +111,7 @@ ENGLISH GROUP：https://t.me/OracleChainChat
 
 We provide client a more stable environment, smooth version upgrading, universal error exceptions with resolving all EOS exceptions into one standard.
 
-With the univeral error exceptions, you can make internationalized error tips for users.
+With the univeral error exceptions, you can make more internationalized error tips for users.
 
 In EOS code base, the exceptions were handled in three layers.
 
