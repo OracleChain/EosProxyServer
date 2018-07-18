@@ -152,9 +152,9 @@ We unified the error code with a offset of 3990000.
 
 ### Chain Layer Exceptions
 
-When dealing with EOS blockchain rpc service, most of the exceptions were [CHAIN exceptions](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/exceptions.hpp), and we using it directly with some self defined code.
+When dealing with EOS blockchain rpc service, most of the exceptions were [CHAIN exceptions](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/exceptions.hpp), and we using it directly with some self defined code here.
 
-    //自定义区
+    //self defined code
     unknown_error_exception(3900000, "server error, please try again later"),
     unknown_market_id_exception(3900001, "unknown coinmarket_id"),
     not_supported_exception(3900002, "API not currently supported"),
