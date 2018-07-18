@@ -80,10 +80,6 @@ Compiling IOS client:
 
 &emsp;4. run `command + R`
 
-**CLIENT DOWNLOAD & TRY**
-
-[PocketEOS](https://pocketeos.com/)
-
 
 **DEPENDENCYS:**
 
