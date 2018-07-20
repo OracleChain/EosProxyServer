@@ -298,43 +298,43 @@ Let's take OracleChainToken contract for example, the contract address is "octto
 
 2.modify controller/QueryTabController.java, the get_account_asset interface, to make adaptions to new tokens：
         
-        //get token balance for the user "octgenerator"
-        BigDecimal oct_balance = blockServiceEos.getBalance(
-                Variables.eosChainUrl,
-                "octtothemoon",
-                "OCT",
-                "octgenerator");
+    //get token balance for the user "octgenerator"
+    BigDecimal oct_balance = blockServiceEos.getBalance(
+        Variables.eosChainUrl,
+        "octtothemoon",
+        "OCT",
+        "octgenerator");
 
-        //resolve third party token rates with fiat currency, and we store the rate redis(the way of cache is pretty simple, which should be improved when you have 10K+ users)
-        redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid+ "eos";
-        CoinMarketTicker coinMarketTicker_oct = redisService.get(redis_key, CoinMarketTicker.class);
-        if(coinMarketTicker_oct == null){
-            try{
-                req_url.append(Variables.COINMARKETCAP_TICKER).append("eos").append("?convert=CNY");
-                result = HttpClientUtils.get(req_url.toString(), "UTF-8");
-                coinMarketTicker_oct  = JSON.parseArray(result, CoinMarketTicker.class).get(0);
-                redisService.set(redis_key, coinMarketTicker_oct, Variables.redisCacheTimeout);
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionsChain(ErrorCodeEnumChain.unknown_market_id_exception);
-            }
+    //resolve third party token rates with fiat currency, and we store the rate redis(the way of cache is pretty simple, which should be improved when you have 10K+ users)
+    redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid+ "eos";
+    CoinMarketTicker coinMarketTicker_oct = redisService.get(redis_key, CoinMarketTicker.class);
+    if(coinMarketTicker_oct == null){
+        try{
+        req_url.append(Variables.COINMARKETCAP_TICKER).append("eos").append("?convert=CNY");
+        result = HttpClientUtils.get(req_url.toString(), "UTF-8");
+        coinMarketTicker_oct  = JSON.parseArray(result, CoinMarketTicker.class).get(0);
+        redisService.set(redis_key, coinMarketTicker_oct, Variables.redisCacheTimeout);
         }
-        
-        //finally we send the token info with AccountAssetInfo entity
-        AccountAssetInfo asset_info= new AccountAssetInfo();
-        BigDecimal oct_usd_price = new BigDecimal(coinMarketTicker.getPrice_usd());
-        BigDecimal oct_cny_price = new BigDecimal(coinMarketTicker.getPrice_cny());
-        double oct_price_change_in_24h = Double.valueOf(coinMarketTicker.getPercent_change_24h());//.doubleValue();
-        asset_info.setOct_balance(oct_balance.setScale(8, RoundingMode.DOWN).toPlainString());
-        asset_info.setOct_balance_usd(oct_balance.multiply(oct_usd_price).setScale(8, RoundingMode.DOWN).toPlainString());
-        asset_info.setOct_balance_cny(oct_balance.multiply(oct_cny_price).setScale(8, RoundingMode.DOWN).toPlainString());
-        asset_info.setOct_price_usd(oct_usd_price.toString());
-        asset_info.setOct_price_cny(oct_cny_price.toString());
-        asset_info.setOct_price_change_in_24h(Double.toString(oct_price_change_in_24h));
-        asset_info.setOct_market_cap_usd(coinMarketTicker.getMarket_cap_usd());
-        asset_info.setOct_market_cap_cny(coinMarketTicker.getMarket_cap_cny());
-        
+        catch (Exception e)
+        {
+        throw new ExceptionsChain(ErrorCodeEnumChain.unknown_market_id_exception);
+        }
+    }
+    
+    //finally we send the token info with AccountAssetInfo entity
+    AccountAssetInfo asset_info= new AccountAssetInfo();
+    BigDecimal oct_usd_price = new BigDecimal(coinMarketTicker.getPrice_usd());
+    BigDecimal oct_cny_price = new BigDecimal(coinMarketTicker.getPrice_cny());
+    double oct_price_change_in_24h = Double.valueOf(coinMarketTicker.getPercent_change_24h());//.doubleValue();
+    asset_info.setOct_balance(oct_balance.setScale(8, RoundingMode.DOWN).toPlainString());
+    asset_info.setOct_balance_usd(oct_balance.multiply(oct_usd_price).setScale(8, RoundingMode.DOWN).toPlainString());
+    asset_info.setOct_balance_cny(oct_balance.multiply(oct_cny_price).setScale(8, RoundingMode.DOWN).toPlainString());
+    asset_info.setOct_price_usd(oct_usd_price.toString());
+    asset_info.setOct_price_cny(oct_cny_price.toString());
+    asset_info.setOct_price_change_in_24h(Double.toString(oct_price_change_in_24h));
+    asset_info.setOct_market_cap_usd(coinMarketTicker.getMarket_cap_usd());
+    asset_info.setOct_market_cap_cny(coinMarketTicker.getMarket_cap_cny());
+    
 
 ------------------------------
 
