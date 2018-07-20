@@ -60,7 +60,7 @@ Compiling Android client:
 
 &emsp;1. install Android Studio 3.0以上 + jdk1.8 +gradle 4.1
 
-&emsp;2. clone our git repository.
+&emsp;2. clone our [git repository](https://github.com/OracleChain/PocketEOS-Android).
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git`
 
@@ -72,7 +72,7 @@ Compiling IOS client:
 
 &emsp;1. install XCODE 8.0
 
-&emsp;2. clone our git repository:
+&emsp;2. clone our [git repository](https://github.com/OracleChain/PocketEOS-IOS):
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-IOS.git`
 
