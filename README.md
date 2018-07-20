@@ -7,14 +7,14 @@
 -------------------------------
 
 # Menu
-+ [Overview](#1)
-+ [ENVIRONMENT](#2)
-+ [Exception Handling](#3)
-+ [Contract Error Code Specification](#4)
-+ [Add Your Token Asset](#5)
-+ [Server Transaction](#6)
-+ [About OracleChain](#7)
-+ [LICENSE](#8)
++ [x] [Overview](#1)
++ [x] [ENVIRONMENT](#2)
++ [x] [Exception Handling](#3)
++ [ ] [Contract Error Code Specification](#4)
++ [x] [Add Your Token Asset](#5)
++ [ ] [Server Transaction](#6)
++ [x] [About OracleChain](#7)
++ [x] [LICENSE](#8)
 
 ------------------------------
 
