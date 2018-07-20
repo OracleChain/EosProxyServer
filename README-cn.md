@@ -306,7 +306,7 @@ EOS中的主要错误都是CHAIN exception，这里我们对错误代码进行�
         "octgenerator");
 
     //获取第三方汇率，并且加入缓存（此处缓存的刷新方式比较简单粗暴，大家可以在流量更大之后修改）
-    redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid+ "eos";
+    redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid+ "oct";
     CoinMarketTicker coinMarketTicker_oct = redisService.get(redis_key, CoinMarketTicker.class);
     if(coinMarketTicker_oct == null){
         try{
