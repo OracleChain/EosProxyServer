@@ -310,7 +310,7 @@ Let's take OracleChainToken contract for example, the contract address is "octto
     CoinMarketTicker coinMarketTicker_oct = redisService.get(redis_key, CoinMarketTicker.class);
     if(coinMarketTicker_oct == null){
         try{
-            req_url.append(Variables.COINMARKETCAP_TICKER).append("eos").append("?convert=CNY");
+            req_url.append(Variables.COINMARKETCAP_TICKER).append("oct").append("?convert=CNY");
             result = HttpClientUtils.get(req_url.toString(), "UTF-8");
             coinMarketTicker_oct  = JSON.parseArray(result, CoinMarketTicker.class).get(0);
             redisService.set(redis_key, coinMarketTicker_oct, Variables.redisCacheTimeout);
