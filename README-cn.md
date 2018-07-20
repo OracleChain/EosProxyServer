@@ -310,7 +310,7 @@ EOS中的主要错误都是CHAIN exception，这里我们对错误代码进行�
     CoinMarketTicker coinMarketTicker_oct = redisService.get(redis_key, CoinMarketTicker.class);
     if(coinMarketTicker_oct == null){
         try{
-            req_url.append(Variables.COINMARKETCAP_TICKER).append("eos").append("?convert=CNY");
+            req_url.append(Variables.COINMARKETCAP_TICKER).append("oct").append("?convert=CNY");
             result = HttpClientUtils.get(req_url.toString(), "UTF-8");
             coinMarketTicker_oct  = JSON.parseArray(result, CoinMarketTicker.class).get(0);
             redisService.set(redis_key, coinMarketTicker_oct, Variables.redisCacheTimeout);
