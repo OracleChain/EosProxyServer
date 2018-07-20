@@ -153,11 +153,11 @@ public class QueryTabController {
                 throw new ExceptionsChain(ErrorCodeEnumChain.unknown_market_id_exception);
             }
         }
-        redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid+ "eos";
+        redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid+ "oraclechain";
         CoinMarketTicker coinMarketTicker_oct = redisService.get(redis_key, CoinMarketTicker.class);
         if(coinMarketTicker_oct == null){
             try{
-                req_url.append(Variables.COINMARKETCAP_TICKER).append("eos").append("?convert=CNY");
+                req_url.append(Variables.COINMARKETCAP_TICKER).append("oraclechain").append("?convert=CNY");
                 result = HttpClientUtils.get(req_url.toString(), "UTF-8");
                 coinMarketTicker_oct  = JSON.parseArray(result, CoinMarketTicker.class).get(0);
                 redisService.set(redis_key, coinMarketTicker_oct, Variables.redisCacheTimeout);
