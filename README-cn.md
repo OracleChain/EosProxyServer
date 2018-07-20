@@ -60,7 +60,7 @@
 
 &emsp;1. 安装Android Studio 3.0以上 + jdk1.8 +gradle 4.1
 
-&emsp;2. 下载repo
+&emsp;2. [下载repo](https://github.com/OracleChain/PocketEOS-Android)
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git`
 
@@ -72,7 +72,7 @@
 
 &emsp;1. 安装 XCODE 8.0
 
-&emsp;2. 下载repo:
+&emsp;2. 下载[repo](https://github.com/OracleChain/PocketEOS-IOS):
 
 >`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-IOS.git`
 
