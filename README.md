@@ -93,7 +93,7 @@ You can also found it in our chainkit repository
 
 https://github.com/OracleChain/chainkit
 
-Our JAVA code of ECDSA and blockchain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the PLACTAL.io team
+Our JAVA code of ECDSA and blockchain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the contribution of PLACTAL.io team
 
 **Any questions pls join our official Telegram Group below:**
 
