@@ -305,7 +305,7 @@ Let's take OracleChainToken contract for example, the contract address is "octto
         "OCT",
         "octgenerator");
 
-    //resolve third party token rates with fiat currency, and we store the rate redis(the way of cache is pretty simple, which should be improved when you have 10K+ users)
+    //resolve third party token rates with fiat currency, and we store the rate in redis(the way of cache is pretty simple, which should be improved in production env.)
     redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid+ "oraclechain";
     CoinMarketTicker coinMarketTicker_oct = redisService.get(redis_key, CoinMarketTicker.class);
     if(coinMarketTicker_oct == null){
