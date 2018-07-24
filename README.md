@@ -326,9 +326,9 @@ Let's take OracleChainToken contract for example, the contract address is "octto
     BigDecimal oct_usd_price = new BigDecimal(coinMarketTicker.getPrice_usd());
     BigDecimal oct_cny_price = new BigDecimal(coinMarketTicker.getPrice_cny());
     double oct_price_change_in_24h = Double.valueOf(coinMarketTicker.getPercent_change_24h());//.doubleValue();
-    asset_info.setOct_balance(oct_balance.setScale(8, RoundingMode.DOWN).toPlainString());
-    asset_info.setOct_balance_usd(oct_balance.multiply(oct_usd_price).setScale(8, RoundingMode.DOWN).toPlainString());
-    asset_info.setOct_balance_cny(oct_balance.multiply(oct_cny_price).setScale(8, RoundingMode.DOWN).toPlainString());
+    asset_info.setOct_balance(oct_balance.setScale(Variables.precision, RoundingMode.DOWN).toPlainString());
+    asset_info.setOct_balance_usd(oct_balance.multiply(oct_usd_price).setScale(Variables.precision, RoundingMode.DOWN).toPlainString());
+    asset_info.setOct_balance_cny(oct_balance.multiply(oct_cny_price).setScale(Variables.precision, RoundingMode.DOWN).toPlainString());
     asset_info.setOct_price_usd(oct_usd_price.toString());
     asset_info.setOct_price_cny(oct_cny_price.toString());
     asset_info.setOct_price_change_in_24h(Double.toString(oct_price_change_in_24h));

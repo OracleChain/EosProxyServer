@@ -21,6 +21,7 @@ public final class Variables {
     //JAVA
     public static final Integer conTimeOut = 3000;
     public static final Integer reqTimeOut = 5000;
+    public static final Integer precision = 4;
 
 
     //REDIS
