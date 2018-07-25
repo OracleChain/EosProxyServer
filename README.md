@@ -20,17 +20,17 @@
 
 <h2 id="1">Overview</h2>
 
-&emsp;&emsp;Pack EOS World in Mobile, Carry Blockchain Age with You！  
+Pack EOS World in Mobile, Carry Blockchain Age with You！  
    
-&emsp;&emsp;Now we opensourced our backend server too(apply to blackbox mode).
+Now we opensourced our backend server too(apply to blackbox mode).
 
-&emsp;&emsp;What we provide in this project：
+What we provide in this project：
 
-&emsp;&emsp;&emsp;`1.Realtime market rates: Here we request the coinmarketcap for certain token rates. The rates were based on multiple exchange market, so it's quite safe.`
+&emsp;`1.Realtime market rates: Here we request the coinmarketcap for certain token rates. The rates were based on multiple exchange market, so it's quite safe.`
 
-&emsp;&emsp;&emsp;`2.General EOS error code specification without importing EOSIO code base(EOSJS/EOS C++): We provide a gobal standard error code based on eos source code,which could make better user experience, and educate more about what really happened when error occurred.`
+&emsp;`2.General EOS error code specification without importing EOSIO code base(EOSJS/EOS C++): We provide a gobal standard error code based on eos source code,which could make better user experience, and educate more about what really happened when error occurred.`
 
-&emsp;&emsp;&emsp;`3.server can pack you own transactions as you want, apply to scenes like:new account creating, transfer for operator, airdrop, all kinds of contract call, and etc.`
+&emsp;`3.server can pack you own transactions as you want, apply to scenes like:new account creating, transfer for operator, airdrop, all kinds of contract call, and etc.`
 
 ------------------------------
 <h2 id="2">ENVIRONMENT</h2>
