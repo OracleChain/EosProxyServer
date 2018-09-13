@@ -11,7 +11,7 @@
 + [x] [ENVIRONMENT](#2)
 + [x] [Exception Handling](#3)
 + [x] [Add Your Token Asset](#4)
-+ [ ] [Server Transaction](#5)
++ [x] [Server Transaction](#5)
 + [x] [About OracleChain](#6)
 + [x] [LICENSE](#7)
 
@@ -340,6 +340,8 @@ Let's take OracleChainToken contract for example, the contract address is "octto
 <h2 id="5">Server Transaction</h2>
 
 ### Make server side transactions
+
+
 
 
 ------------------------------
