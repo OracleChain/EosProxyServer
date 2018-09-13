@@ -1,9 +1,10 @@
 package com.oraclechain.eosio.crypto;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import com.oraclechain.eosio.crypto.util.BitUtils;
 import com.oraclechain.eosio.crypto.util.HexUtils;
+
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 
 public class Hmac {

@@ -5,10 +5,10 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.annotations.Expose;
 import com.oraclechain.eosio.crypto.util.HexUtils;
-import com.oraclechain.eosio.types.EosType;
-import com.oraclechain.eosio.types.TypeAccountName;
-import com.oraclechain.eosio.types.TypeActionName;
-import com.oraclechain.eosio.types.TypePermissionLevel;
+import com.oraclechain.eosio.eosTypes.EosType;
+import com.oraclechain.eosio.eosTypes.TypeAccountName;
+import com.oraclechain.eosio.eosTypes.TypeActionName;
+import com.oraclechain.eosio.eosTypes.TypePermissionLevel;
 
 import java.util.ArrayList;
 import java.util.Arrays;

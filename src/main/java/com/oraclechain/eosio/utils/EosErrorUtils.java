@@ -23,9 +23,20 @@ public class EosErrorUtils {
             JSONObject chainJsonObject = (JSONObject) JSON.parse(fc_error_string);
             Integer chain_code_int = (Integer) chainJsonObject.get("code");
             if (chain_code_int != null) {
-                log.info("--->" + component_name + " failed:" + contents);
-                String chain_msg_string = ErrorCodeEnumChain.getMsgById(chain_code_int);
-                return MessageResult.error(chain_msg_string, chain_code_int, "");
+                String chain_details_string = JSON.toJSONString(chainJsonObject.get("details"));
+
+                JSONArray contractJsonArray = JSON.parseArray(chain_details_string);
+                String contract_detail_message_string = contractJsonArray.getJSONObject(0).get("message").toString();
+
+                if(contract_detail_message_string == null){
+                    String chain_msg_string = ErrorCodeEnumChain.getMsgById(chain_code_int);
+                    log.info("--->" + component_name + " failed:" + contents);
+                    return MessageResult.error(chain_msg_string, chain_code_int);
+                }
+                else{
+                    log.info("--->" + component_name + " failed:" + contents);
+                    return MessageResult.error(contract_detail_message_string, chain_code_int);
+                }
             }
             log.info("--->" + component_name + " failed:" + contents);
             String fc_msg_string = ErrorCodeEnumFC.getMsgById(fc_code_int);

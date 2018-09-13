@@ -84,7 +84,8 @@ public class MessageResult implements Serializable {
     }
 
     public static MessageResult error(){
-        return new MessageResult("未知错误,请联系管理员",1,null);
+
+        return new MessageResult("system busy...please try again later",1,null);
     }
 
 }

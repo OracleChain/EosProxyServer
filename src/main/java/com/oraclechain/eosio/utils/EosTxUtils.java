@@ -1,20 +1,13 @@
 package com.oraclechain.eosio.utils;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import com.oraclechain.eosio.api.EosChainInfo;
+import com.oraclechain.eosio.eosApi.EosChainInfo;
 import com.oraclechain.eosio.chain.Action;
 import com.oraclechain.eosio.chain.SignedTransaction;
 import com.oraclechain.eosio.constants.Variables;
 import com.oraclechain.eosio.crypto.ec.EosPrivateKey;
-import com.oraclechain.eosio.crypto.ec.EosPublicKey;
-import com.oraclechain.eosio.dto.*;
-import com.oraclechain.eosio.types.TypeAccountName;
-import com.oraclechain.eosio.types.TypeChainId;
+import com.oraclechain.eosio.eosTypes.TypeChainId;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class EosTxUtils {
 
@@ -50,7 +43,7 @@ public class EosTxUtils {
 
     public static SignedTransaction signTransaction(SignedTransaction tx_for_sign, String oracle_key, String chainId) {
 
-        //签名
+        //sign
         EosPrivateKey private_key = new EosPrivateKey(oracle_key);
         tx_for_sign.sign(private_key, new TypeChainId(chainId));
 

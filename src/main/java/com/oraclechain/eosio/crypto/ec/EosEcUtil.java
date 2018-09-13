@@ -209,7 +209,7 @@ public class EosEcUtil {
         return result;
     }
 
-    public static CurveParam getCurveParamFrom( String curveType ) {
+    public static CurveParam getCurveParamFrom(String curveType ) {
         return EcTools.getCurveParam( PREFIX_R1.equals( curveType ) ? CurveParam.SECP256_R1 : CurveParam.SECP256_K1);
     }
 

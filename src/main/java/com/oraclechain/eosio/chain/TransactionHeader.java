@@ -4,7 +4,7 @@ package com.oraclechain.eosio.chain;
 import com.google.gson.annotations.Expose;
 import com.oraclechain.eosio.crypto.util.BitUtils;
 import com.oraclechain.eosio.crypto.util.HexUtils;
-import com.oraclechain.eosio.types.EosType;
+import com.oraclechain.eosio.eosTypes.EosType;
 
 import java.math.BigInteger;
 import java.text.DateFormat;

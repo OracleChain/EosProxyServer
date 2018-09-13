@@ -8,7 +8,7 @@ public class Ripemd160 {
         mDigestBytes = digest;
     }
 
-    public static Ripemd160 from( byte[] data ) {
+    public static Ripemd160 from(byte[] data ) {
 
         return Ripemd160.from( data, 0, ( data != null) ? data.length : 0 );
     }

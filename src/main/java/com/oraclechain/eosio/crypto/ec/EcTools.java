@@ -8,7 +8,7 @@ public class EcTools {
 
     private static CurveParam[] sCurveParams = new CurveParam[2];
 
-    public static CurveParam getCurveParam( int curveType ){
+    public static CurveParam getCurveParam(int curveType ){
 
         if ( (curveType < 0 ) || ( sCurveParams.length <= curveType ) ) {
             throw new IllegalArgumentException("Unknown Curve Type: " + curveType);

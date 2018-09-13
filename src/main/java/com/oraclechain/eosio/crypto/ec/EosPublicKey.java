@@ -1,11 +1,11 @@
 package com.oraclechain.eosio.crypto.ec;
 
 
-import java.util.Arrays;
-
 import com.oraclechain.eosio.crypto.digest.Ripemd160;
 import com.oraclechain.eosio.crypto.util.BitUtils;
 import com.oraclechain.eosio.dto.EosRefValue;
+
+import java.util.Arrays;
 
 
 /**

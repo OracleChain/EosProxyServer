@@ -16,6 +16,7 @@ import javax.net.ssl.SSLException;
 import javax.net.ssl.SSLSession;
 import javax.net.ssl.SSLSocket;
 
+import com.oraclechain.eosio.constants.Variables;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.http.Consts;
@@ -45,6 +46,17 @@ public class HttpClientUtils {
     public static final int readTimeout=10000;
     public static final String charset="UTF-8";
     private static HttpClient client = null;
+
+
+    public static String ocPost(String url, String body) throws ConnectTimeoutException, SocketTimeoutException, Exception{
+        return HttpClientUtils.post( url, body,"application/json","UTF-8", Variables.conTimeOut, Variables.reqTimeOut);
+    }
+
+
+    public static String ocGet(String url) throws ConnectTimeoutException,SocketTimeoutException, Exception{
+        return HttpClientUtils.get(url, "UTF-8", Variables.conTimeOut, Variables.reqTimeOut);
+    }
+
 
     static {
         PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager();

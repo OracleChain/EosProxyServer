@@ -1,13 +1,11 @@
 package com.oraclechain.eosio.crypto.ec;
 
 
-import java.math.BigInteger;
-import java.security.SecureRandom;
-import java.util.Arrays;
-
 import com.oraclechain.eosio.crypto.digest.Sha256;
 import com.oraclechain.eosio.crypto.util.Base58;
-import com.oraclechain.eosio.dto.EosRefValue;
+
+import java.math.BigInteger;
+import java.security.SecureRandom;
 
 
 /**
@@ -111,7 +109,7 @@ public class EosPrivateKey {
         return mCurveParam;
     }
 
-    public EcSignature sign( Sha256 digest ) {
+    public EcSignature sign(Sha256 digest ) {
         return EcDsa.sign( digest, this);
     }
 

@@ -1,12 +1,11 @@
 package com.oraclechain.eosio.crypto.ec;
 
 
+import com.oraclechain.eosio.crypto.util.HexUtils;
+import org.apache.commons.lang3.StringUtils;
+
 import java.math.BigInteger;
 import java.util.Arrays;
-
-import com.oraclechain.eosio.crypto.util.HexUtils;
-import com.oraclechain.eosio.dto.EosRefValue;
-import org.apache.commons.lang3.StringUtils;
 
 
 /**

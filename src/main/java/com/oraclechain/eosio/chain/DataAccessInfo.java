@@ -2,8 +2,8 @@
 package com.oraclechain.eosio.chain;
 
 import com.google.gson.annotations.Expose;
-import com.oraclechain.eosio.types.TypeAccountName;
-import com.oraclechain.eosio.types.TypeScopeName;
+import com.oraclechain.eosio.eosTypes.TypeAccountName;
+import com.oraclechain.eosio.eosTypes.TypeScopeName;
 
 /**
  * Created by swapnibble on 2018-03-20.

@@ -1,18 +1,12 @@
 
 package com.oraclechain.eosio.chain;
 
-import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.JSONObject;
-import com.alibaba.fastjson.annotation.JSONField;
-import com.google.gson.JsonElement;
 import com.google.gson.annotations.Expose;
 import com.oraclechain.eosio.crypto.util.HexUtils;
-import com.oraclechain.eosio.types.EosByteWriter;
-import com.oraclechain.eosio.types.TypeAccountName;
+import com.oraclechain.eosio.eosTypes.EosByteWriter;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.zip.DataFormatException;
 import java.util.zip.Deflater;

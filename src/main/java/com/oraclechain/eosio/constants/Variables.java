@@ -2,9 +2,10 @@ package com.oraclechain.eosio.constants;
 
 public final class Variables {
 
-    //TOKEN
+    //EOS TOKEN
     public static final String EOS_TOKEN_CONTRACT_NAME = "eosio.token";
     public static final String EOS_TOKEN_CONTRACT_SYMBOL = "EOS";
+    //OCT TOKEN
     public static final String OCT_TOKEN_CONTRACT_NAME = "octtothemoon";
     public static final String OCT_TOKEN_CONTRACT_SYMBOL = "OCT";
 
@@ -21,7 +22,7 @@ public final class Variables {
     //JAVA
     public static final Integer conTimeOut = 3000;
     public static final Integer reqTimeOut = 5000;
-    public static final Integer precision = 4;
+    public static final Integer moneyPrecision = 4;
 
 
     //REDIS
@@ -31,9 +32,9 @@ public final class Variables {
 
 
     //chain
-    public static final String eosChainUrl = "http://dns1-rpc.oraclechain.io:58888/v1/chain/";
-    public static final String eosAccountUrl = "http://dns1-rpc.oraclechain.io:58888/v1/account_history/";
-    public static final String eosAccount = "tx_account_name";
-    public static final String eosPrivateKey = "tx_private_key";
+    public static final String eosChainUrl = "http://api.oraclechain.io/v1/chain/";
+    public static final String eosHistoryUrl = "http://api.oraclechain.io/v1/history/";
+    public static final String eosAccount = "aaaaa";
+    public static final String eosPrivateKey = "bbbbb";
 
 }

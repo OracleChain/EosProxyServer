@@ -5,25 +5,21 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
-import com.oraclechain.eosio.api.EosChainInfo;
-import com.oraclechain.eosio.api.GetCurrencyInfo;
-import com.oraclechain.eosio.api.JsonToBinRequest;
-import com.oraclechain.eosio.api.JsonToBinResponse;
+import com.oraclechain.eosio.eosApi.EosChainInfo;
+import com.oraclechain.eosio.eosApi.GetCurrencyInfo;
+import com.oraclechain.eosio.eosApi.JsonToBinRequest;
+import com.oraclechain.eosio.eosApi.JsonToBinResponse;
 import com.oraclechain.eosio.chain.PackedTransaction;
 import com.oraclechain.eosio.chain.SignedTransaction;
 import com.oraclechain.eosio.constants.Variables;
-import com.oraclechain.eosio.crypto.ec.EosPublicKey;
 import com.oraclechain.eosio.dto.CoinMarketTicker;
-import com.oraclechain.eosio.dto.UserAssetInfo;
-import com.oraclechain.eosio.exceptions.ErrorCodeEnumChain;
-import com.oraclechain.eosio.exceptions.ExceptionsChain;
+import com.oraclechain.eosio.dto.UserAsset;
 import com.oraclechain.eosio.service.RedisService;
 import com.oraclechain.eosio.service.BlockServiceEos;
-import com.oraclechain.eosio.types.*;
+import com.oraclechain.eosio.utils.EosErrorUtils;
 import com.oraclechain.eosio.utils.EosTxUtils;
 import com.oraclechain.eosio.utils.HttpClientUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -41,47 +37,35 @@ public class BlockServiceEosImpl implements BlockServiceEos {
 
 
 
-    public PackedTransaction pushMessage(String baseUrl,
-                                                String oracleKey,
-                                                String contract,
-                                                String action,
-                                                String message,
-                                                String [] permissions) throws Exception
+    public PackedTransaction createTrx(String oracleKey,
+                                         String contract,
+                                         String action,
+                                         String message) throws Exception
     {
-
-
-        JsonToBinRequest json_obj = new JsonToBinRequest(contract, action, message);
-        String tmp_obj = new Gson().toJson(json_obj);
-
-
-        StringBuilder url = new StringBuilder();
-        url.append(baseUrl).append("abi_json_to_bin");
-        String result= HttpClientUtils.post(
-                url.toString(),
-                tmp_obj,
-                "application/json",
-                "UTF-8",
-                Variables.conTimeOut,
-                Variables.reqTimeOut);
-        JsonToBinResponse bin_obj = new Gson().fromJson(result, JsonToBinResponse.class);
-
+        //abi to bin
+        JsonToBinRequest jsonToBinRequest = new JsonToBinRequest(contract, action, message);
+        String jsonToBinRequestJson = new Gson().toJson(jsonToBinRequest);
+        String result= HttpClientUtils.ocPost( Variables.eosChainUrl+ "abi_json_to_bin", jsonToBinRequestJson);
+        EosErrorUtils.handleEosResponse(result, "abi_json_to_bin");
+        JsonToBinResponse jsonToBinResponse = new Gson().fromJson(result, JsonToBinResponse.class);
 
         //get info
-        url = new StringBuilder();
-        url.append(baseUrl).append("get_info");
-        result = HttpClientUtils.get(url.toString(), "UTF-8");
-        EosChainInfo chain_info = JSON.parseObject(result, EosChainInfo.class);
+        result= HttpClientUtils.ocGet( Variables.eosChainUrl+ "get_info");
+        EosErrorUtils.handleEosResponse(result, "get_info");
+        EosChainInfo chain_info = new Gson().fromJson(result, EosChainInfo.class);
+
         SignedTransaction unsigned_tx = EosTxUtils.createTransaction(
                 contract,
                 action,
-                bin_obj.getBinargs(),
-                permissions,
+                jsonToBinResponse.getBinargs(),
+                EosTxUtils.getActivePermission(Variables.eosAccount),
                 chain_info
         );
-        SignedTransaction signed_tx = EosTxUtils.signTransaction(unsigned_tx, oracleKey, chain_info.getChain_id());
 
+        SignedTransaction signed_tx = EosTxUtils.signTransaction(unsigned_tx, oracleKey, chain_info.getChain_id());
         return new PackedTransaction(signed_tx);
     }
+
 
     public BigDecimal getBalance(String baseUrl,
                                  String contractName,
@@ -89,36 +73,18 @@ public class BlockServiceEosImpl implements BlockServiceEos {
                                  String accountName) throws Exception
     {
 
-
-        StringBuilder req_url = new StringBuilder();
-
-        //获取EOS账号详情
-        req_url.delete(0, req_url.length());
-        req_url.append(Variables.eosChainUrl).append("get_currency_balance");
-        StringBuilder body = new StringBuilder();
-
         GetCurrencyInfo currencyInfo = new GetCurrencyInfo();
         currencyInfo.setAccount(accountName);
         currencyInfo.setCode(contractName);
         currencyInfo.setSymbol(tokenSymbol);
-
-//        String temp = JSON.toJSONString(currencyInfo);
-        body.append(JSON.toJSONString(currencyInfo));
-        String result= HttpClientUtils.post(
-                req_url.toString(),
-                body.toString(),
-                "application/x-www-form-urlencoded",
-                "UTF-8",
-                Variables.conTimeOut,
-                Variables.reqTimeOut);
-
-
+        String json = new Gson().toJson(currencyInfo);
+        String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "get_currency_balance", json);
+        //should NOT add handleEosResponse here
 
         BigDecimal token_balance = null;
         JsonElement data = new JsonParser().parse(result);
         if(data.isJsonArray())
         {
-
             JsonArray arr_obj = data.getAsJsonArray();
             for(int i=0 ; i< arr_obj.size(); i++)
             {
@@ -142,6 +108,80 @@ public class BlockServiceEosImpl implements BlockServiceEos {
     }
 
 
+
+    public CoinMarketTicker getTicker(String coinmarket_id) throws Exception
+    {
+
+        StringBuilder req_url = new StringBuilder();
+
+        String redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid + coinmarket_id;
+        CoinMarketTicker coinMarketTicker = redisService.get(redis_key, CoinMarketTicker.class);
+        if(coinMarketTicker == null){
+            try{
+                req_url.append(Variables.COINMARKETCAP_TICKER).append(coinmarket_id).append("?convert=CNY");
+                String result = HttpClientUtils.ocGet(req_url.toString());
+                coinMarketTicker  = JSON.parseArray(result, CoinMarketTicker.class).get(0);
+                redisService.set(redis_key, coinMarketTicker, Variables.redisCacheTimeout);
+            }
+            catch (Exception e)
+            {
+                coinMarketTicker = new CoinMarketTicker();
+            }
+        }
+        return coinMarketTicker;
+    }
+
+
+
+
+    public UserAsset getUserAssetInfo(String baseUrl,
+                                      String accountName,
+                                      String contractName,
+                                      String tokenSymbol,
+                                      String coinmarket_id) throws Exception
+    {
+
+        CoinMarketTicker coinMarketTicker = null;
+        if(coinmarket_id == null || coinmarket_id.isEmpty() || coinmarket_id.length()> 20){
+            coinMarketTicker = new CoinMarketTicker();
+        }
+        else
+        {
+            coinMarketTicker = getTicker(coinmarket_id);
+        }
+
+
+        UserAsset userAssetInfo = new UserAsset();
+        userAssetInfo.setAccount_name(accountName);
+        userAssetInfo.setContract_name(contractName);
+        userAssetInfo.setToken_symbol(tokenSymbol);
+        userAssetInfo.setCoinmarket_id(coinmarket_id);
+
+        userAssetInfo.setAsset_market_cap_cny(coinMarketTicker.getMarket_cap_cny());
+        userAssetInfo.setAsset_market_cap_usd(coinMarketTicker.getMarket_cap_usd());
+        userAssetInfo.setAsset_price_change_in_24h(coinMarketTicker.getPercent_change_24h());
+
+
+        BigDecimal eos_usd_price = new BigDecimal(coinMarketTicker.getPrice_usd());
+        BigDecimal eos_cny_price = new BigDecimal(coinMarketTicker.getPrice_cny());
+        userAssetInfo.setAsset_price_usd(eos_usd_price.setScale(Variables.moneyPrecision, RoundingMode.DOWN).toPlainString());
+        userAssetInfo.setAsset_price_cny(eos_cny_price.setScale(Variables.moneyPrecision, RoundingMode.DOWN).toPlainString());
+
+
+        BigDecimal token_balance = getBalance(
+                baseUrl,
+                contractName,
+                tokenSymbol,
+                accountName);
+
+        userAssetInfo.setBalance(token_balance.toPlainString());
+        userAssetInfo.setBalance_usd(token_balance.multiply(eos_usd_price).setScale(Variables.moneyPrecision, RoundingMode.DOWN).toPlainString());
+        userAssetInfo.setBalance_cny(token_balance.multiply(eos_cny_price).setScale(Variables.moneyPrecision, RoundingMode.DOWN).toPlainString());
+
+
+
+        return userAssetInfo;
+    }
 
 
 

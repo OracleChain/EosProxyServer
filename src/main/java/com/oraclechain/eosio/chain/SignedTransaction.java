@@ -6,8 +6,8 @@ import com.oraclechain.eosio.crypto.digest.Sha256;
 import com.oraclechain.eosio.crypto.ec.EcDsa;
 import com.oraclechain.eosio.crypto.ec.EcSignature;
 import com.oraclechain.eosio.crypto.ec.EosPrivateKey;
-import com.oraclechain.eosio.types.EosByteWriter;
-import com.oraclechain.eosio.types.TypeChainId;
+import com.oraclechain.eosio.eosTypes.EosByteWriter;
+import com.oraclechain.eosio.eosTypes.TypeChainId;
 
 import java.util.ArrayList;
 import java.util.List;

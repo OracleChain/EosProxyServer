@@ -2,13 +2,12 @@ package com.oraclechain.eosio.crypto.ec;
 
 
 import com.google.common.base.Preconditions;
+import com.oraclechain.eosio.crypto.Hmac;
+import com.oraclechain.eosio.crypto.digest.Sha256;
+import com.oraclechain.eosio.eosTypes.EosByteWriter;
 
 import java.math.BigInteger;
 import java.util.Arrays;
-
-import com.oraclechain.eosio.crypto.Hmac;
-import com.oraclechain.eosio.crypto.digest.Sha256;
-import com.oraclechain.eosio.types.EosByteWriter;
 
 
 public class EcDsa {

@@ -1,8 +1,7 @@
 package com.oraclechain.eosio.crypto.digest;
 
-import com.oraclechain.eosio.utils.HexUtils;
-
 import com.google.common.base.Preconditions;
+import com.oraclechain.eosio.utils.HexUtils;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
