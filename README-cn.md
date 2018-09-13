@@ -88,27 +88,6 @@
 
 &emsp;4. 使用`command + R` 编译运行
 
-
-**依赖库:**
-
-C语言版的椭圆曲线算法实现来自micro-ecc，欧链在椭圆曲线secp256k1上实现了Schoenmakers在crypto99上提出的Publicly Verifiable Secret Sharing
-
-&emsp;https://github.com/kmackay/micro-ecc
-
-&emsp;https://github.com/songgeng87/PubliclyVerifiableSecretSharing
-
-&emsp;你也可以在我们的chainkit库中，找到工具类完整的封装。
-
-&emsp;https://github.com/OracleChain/chainkit
-
-JAVA语言版的椭圆曲线算法及blockchain工具类，来自于[EOSCommander](https://github.com/plactal/EosCommander)，感谢PLACTAL.io为社区的付出。
-
-**相关问题反馈，请加欧链官方Telegram群组:**
-
-中文群：https://t.me/OracleChainChatCN
-
-英文群：https://t.me/OracleChainChat
-
 ------------------------------
 
 <h2 id="3">异常捕获</h2>
@@ -132,12 +111,14 @@ EOS的底层框架使用的是graphene，而graphene抛出的错误被统一定�
 
 我们这里为了把错误码统一起来，对FC error code进行了统一偏移.
 
+![](https://github.com/OracleChain/PocketEOS-ShieldServer/raw/master/screenshots/shieldserver.01.png)
     
 ### 链层异常
 
 
 EOS中的主要错误都是CHAIN exception，这里我们对错误代码进行了直接[引用](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/exceptions.hpp)
 
+![](https://github.com/OracleChain/PocketEOS-ShieldServer/raw/master/screenshots/shieldserver.02.png)
 
 ------------------------------
 
@@ -219,6 +200,9 @@ OracleChain的使命是“让世界与区块链互联”，立志成为链接现
 
 <h2 id="7">版权</h2>
 
-**License**
+发布于 GNU/LGPL Version 3 许可证书下
 
-Released under GNU/LGPL Version 3
+
+<h2 id="8">感谢</h2>
+
+椭圆曲线算法及签名工具：[EOSCommander](https://github.com/plactal/EosCommander)，感谢PLAYERONE.ID团队的贡献。
