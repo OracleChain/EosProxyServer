@@ -203,6 +203,6 @@ Released under GNU/LGPL Version 3
 
 <h2 id="8">THANKS</h2>
 
-ECDSA and chain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the contribution of PLACTAL.io team!
+ECDSA and chain utility are based on the source code of [EOSCommander](https://github.com/playerone-id/EosCommander),thx for the contribution of PLAYERONE.ID team!
 
 If you found this project useful, vote us, vote oraclegogogo!!!😄
