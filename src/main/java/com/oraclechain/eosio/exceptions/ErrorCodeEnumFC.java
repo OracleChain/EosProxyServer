@@ -4,7 +4,7 @@ package com.oraclechain.eosio.exceptions;
 public enum ErrorCodeEnumFC {
 
     /**
-     * exceptions code based on c9b7a2472
+     * exceptions code based on e87d245da
      */
 
     //FROM libraries/fc/include/fc/exception/exception.hpp

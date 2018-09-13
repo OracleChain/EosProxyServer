@@ -2,96 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="893f86e7-34b8-4ce4-806b-8b446760da0c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/EosApiController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/TransactionController.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/constants/SpringContext.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/ChainAPIController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/QueryTXController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/QueryTabController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/TXAdvController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/TXRawController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/Hmac.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/digest/GeneralDigest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/digest/Ripemd160.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/digest/Sha256.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/digest/Sha512.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/CurveParam.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EcCurve.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EcDsa.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EcFieldElement.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EcPoint.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EcSignature.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EcTools.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EosEcUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EosPrivateKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/ec/EosPublicKey.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/util/Base58.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/util/BitUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/util/CryptUtil.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/util/HexUtils.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/AccountAssetInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/AccountInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/BlockChainError.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/BlockChainErrorDetails.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/RedPacketTxInfo.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/EosBuyRam.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/EosBuyRamBytes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/EosDelegate.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/EosNewAccount.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/EosTransfer.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/AccountInfoRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/AccountInfoRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/EosChainInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/EosChainInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/GetCodeRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/GetCodeRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/GetCodeResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/GetCodeResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/GetCurrencyInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/GetCurrencyInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/GetRequiredKeys.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/GetRequiredKeys.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/GetTableRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/GetTableRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/JsonToBinRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/JsonToBinRequest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/JsonToBinResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/JsonToBinResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/Key.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/Key.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/Permission.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/Permission.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/PushTxnResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/PushTxnResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/RequiredAuth.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/RequiredAuth.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/api/RequiredKeysResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/RequiredKeysResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/QueryExtController.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/AdvancedQueryController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/UserAssetInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/UserAsset.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/EosByteReader.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/EosByteReader.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/EosByteWriter.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/EosByteWriter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/EosType.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/EosType.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeAccountName.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeAccountName.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeActionName.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeActionName.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeAsset.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeAsset.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeAuthority.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeAuthority.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeChainId.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeChainId.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeExtension.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeExtension.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeKeyWeight.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeKeyWeight.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeName.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeName.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypePermissionLevel.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypePermissionLevel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypePermissionLevelWeight.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypePermissionLevelWeight.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypePermissionName.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypePermissionName.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypePublicKey.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypePublicKey.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeScopeName.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeScopeName.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeSharedLock.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeSharedLock.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/types/TypeWaitWeight.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosTypes/TypeWaitWeight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/EosBlockchainApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/EosBlockchainApplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/Action.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/Action.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/DataAccessInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/DataAccessInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/PackedTransaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/PackedTransaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/SignedTransaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/SignedTransaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/Transaction.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/Transaction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/TransactionHeader.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/chain/TransactionHeader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/constants/Variables.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/constants/Variables.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/MessageResult.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/MessageResult.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumChain.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumChain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/GlobalExceptionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/GlobalExceptionHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/service/BlockServiceEos.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/service/BlockServiceEos.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/service/impl/BlockServiceEosImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/service/impl/BlockServiceEosImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/EosErrorUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/EosErrorUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/EosTxUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/EosTxUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/EoscGsonTypeAdapterFactory.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/EoscGsonTypeAdapterFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/HttpClientUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/HttpClientUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumFC.java" afterPath="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumFC.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -171,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TransactionController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/TransactionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,11 +95,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BlockServiceEos.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/service/BlockServiceEos.java">
+      <file leaf-file-name="ErrorCodeEnumFC.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumFC.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="90">
+              <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorCodeEnumChain.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumChain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -201,16 +123,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EosTxUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/EosTxUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="43" column="36" lean-forward="false" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -281,7 +193,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/service/impl/RedisServiceImpl.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/tasks/MqMsgRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumFC.java" />
         <option value="$PROJECT_DIR$/README-cn.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/AvailableNodeInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/MessageResult.java" />
@@ -292,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/AccountAssetInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/UserAsset.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/dto/ReqAssetsInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumChain.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/QueryTXController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/utils/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/QueryTabController.java" />
@@ -315,6 +225,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/AdvancedQueryController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/TransactionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumFC.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumChain.java" />
       </list>
     </option>
   </component>
@@ -424,6 +336,15 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="eosio" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sheild_server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PocketEOS-ShieldServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eosio" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="sheild_server" type="b2602c69:ProjectViewProjectNode" />
@@ -602,22 +523,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/JsonToBinRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/eosApi/Key.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/crypto/util/Base58.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1026,13 +931,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/controller/TransactionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/oraclechain/eosio/exceptions/ErrorCodeEnumFC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="41" lean-forward="false" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>

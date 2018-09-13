@@ -5,7 +5,7 @@ public enum ErrorCodeEnumChain  {
 
 
     /**
-     * exceptions code based on c9b7a2472
+     * exceptions code based on e87d245da
      *  chain_exception
      *   |- chain_type_exception
      *   |- fork_database_exception
