@@ -111,14 +111,14 @@ EOS的底层框架使用的是graphene，而graphene抛出的错误被统一定�
 
 我们这里为了把错误码统一起来，对FC error code进行了统一偏移.
 
-![](https://github.com/OracleChain/PocketEOS-ShieldServer/raw/master/screenshots/shieldserver.01.png)
+![](https://github.com/OracleChain/PocketEOS-ShieldServer/raw/master/screenshots/shieldserver.02.png)
     
 ### 链层异常
 
 
 EOS中的主要错误都是CHAIN exception，这里我们对错误代码进行了直接[引用](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/exceptions.hpp)
 
-![](https://github.com/OracleChain/PocketEOS-ShieldServer/raw/master/screenshots/shieldserver.02.png)
+![](https://github.com/OracleChain/PocketEOS-ShieldServer/raw/master/screenshots/shieldserver.01.png)
 
 ------------------------------
 
