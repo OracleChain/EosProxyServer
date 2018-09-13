@@ -14,6 +14,7 @@
 + [x] [Server Transaction](#5)
 + [x] [About OracleChain](#6)
 + [x] [LICENSE](#7)
++ [x] [THANKS](#8)
 
 ------------------------------
 
@@ -86,27 +87,6 @@ Compiling IOS client:
 &emsp;3. import the project and change the configuration of backend server address according to your local PocketEOS-ShieldServer.
 
 &emsp;4. run `command + R`
-
-
-**DEPENDENCYS:**
-
-Our C code of ECDSA is based on micro-ecc.And OracleChain build a Publicly Verifiable Secret Sharing on secp256k1 which is published by Schoenmakers on crypto99 conference.
-
-https://github.com/kmackay/micro-ecc
-
-https://github.com/songgeng87/PubliclyVerifiableSecretSharing
-
-You can also found it in our chainkit repository
-
-https://github.com/OracleChain/chainkit
-
-Our JAVA code of ECDSA and blockchain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the contribution of PLACTAL.io team
-
-**Any questions pls join our official Telegram Group below:**
-
-CHINESE GROUP：https://t.me/OracleChainChatCN
-
-ENGLISH GROUP：https://t.me/OracleChainChat
 
 ------------------------------
 
@@ -222,3 +202,22 @@ By achieving intra-chain and extra-chain data connectivity, we aspire to create 
 **License**
 
 Released under GNU/LGPL Version 3
+
+<h2 id="8">THANKS</h2>
+
+**SPECIAL THANKS:**
+
+Our C code of ECDSA is based on micro-ecc.And OracleChain build a Publicly Verifiable Secret Sharing on secp256k1 which is published by Schoenmakers on crypto99 conference.
+
+https://github.com/kmackay/micro-ecc
+
+https://github.com/songgeng87/PubliclyVerifiableSecretSharing
+
+You can also found it in our chainkit repository
+
+https://github.com/OracleChain/chainkit
+
+Our JAVA code of ECDSA and blockchain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the contribution of PLACTAL.io team!
+
+If you found this project useful, vote us, vote oraclegogogo!!!😄
+Our JAVA code of ECDSA and blockchain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the contribution of PLACTAL.io team
