@@ -10,11 +10,10 @@
 + [x] [Overview](#1)
 + [x] [ENVIRONMENT](#2)
 + [x] [Exception Handling](#3)
-+ [ ] [Contract Error Code Specification](#4)
-+ [x] [Add Your Token Asset](#5)
-+ [ ] [Server Transaction](#6)
-+ [x] [About OracleChain](#7)
-+ [x] [LICENSE](#8)
++ [x] [Add Your Token Asset](#4)
++ [x] [Server Transaction](#5)
++ [x] [About OracleChain](#6)
++ [x] [LICENSE](#7)
 
 ------------------------------
 
@@ -278,15 +277,7 @@ When dealing with EOS blockchain rpc service, most of the exceptions were [CHAIN
 
 ------------------------------
 
-<h2 id="4">Contract Error Code Specification</h2>
-
-### Contract Layer Exceptions Specification
-
-
-
-------------------------------
-
-<h2 id="5">Add Your Token Asset</h2>
+<h2 id="4">Add Your Token Asset</h2>
 
 ### How to add your own token
 
@@ -346,13 +337,15 @@ Let's take OracleChainToken contract for example, the contract address is "octto
 
 ------------------------------
 
-<h2 id="6">Server Transaction</h2>
+<h2 id="5">Server Transaction</h2>
 
 ### Make server side transactions
 
 
+
+
 ------------------------------
-<h2 id="7">About OracleChain</h2>
+<h2 id="6">About OracleChain</h2>
 
 As the world’s first application built on an EOS ecosphere, OracleChain needs to meet the demands of the Oracle (oracle machine) ecosystem by efficiently linking blockchain technology services with various real-life scenarios, thereby delving into this immense tens of billions of dollars valuation market.
 
@@ -363,7 +356,7 @@ OracleChain will nurture and serve those blockchain applications that change the
 By achieving intra-chain and extra-chain data connectivity, we aspire to create a service provisioning platform that can most efficiently gain access to extra-chain data in the future blockchain world.
 
 
-<h2 id="8">LICENSE</h2>
+<h2 id="7">LICENSE</h2>
 
 **License**
 
