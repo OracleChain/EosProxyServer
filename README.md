@@ -199,8 +199,6 @@ By achieving intra-chain and extra-chain data connectivity, we aspire to create 
 
 <h2 id="7">LICENSE</h2>
 
-**License**
-
 Released under GNU/LGPL Version 3
 
 <h2 id="8">THANKS</h2>
