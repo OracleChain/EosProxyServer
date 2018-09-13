@@ -205,16 +205,6 @@ Released under GNU/LGPL Version 3
 
 <h2 id="8">THANKS</h2>
 
-Our C code of ECDSA is based on micro-ecc.And OracleChain build a Publicly Verifiable Secret Sharing on secp256k1 which is published by Schoenmakers on crypto99 conference.
-
-https://github.com/kmackay/micro-ecc
-
-https://github.com/songgeng87/PubliclyVerifiableSecretSharing
-
-You can also found it in our chainkit repository
-
-https://github.com/OracleChain/chainkit
-
-Our JAVA code of ECDSA and blockchain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the contribution of PLACTAL.io team!
+ECDSA and chain utility are based on the source code of [EOSCommander](https://github.com/plactal/EosCommander),thx for the contribution of PLACTAL.io team!
 
 If you found this project useful, vote us, vote oraclegogogo!!!😄
