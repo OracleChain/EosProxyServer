@@ -49,7 +49,7 @@ What we provide in this project：
 
 >`host: redis_server_ip`
 
->`port: 6379`
+>`port: redis_server_port`
 
 >`password: redis_passwd`
 
