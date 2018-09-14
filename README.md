@@ -95,6 +95,8 @@ In EOS code base, the exceptions were handled in three layers.
 
 3.In the CONTRACT layer, we can standardize a general error code specification in your contract code. And it's optional to add additional error code handling specific situations.
 
+https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing
+
 ### FC Layer Exceptions
 
 EOS is based on grephene framework, which defines the error code of FC layer in [FC expceptions file](https://github.com/EOSIO/fc/blob/df5a17ef0704d7dd96c444bfd9a70506bcfbc057/include/fc/exception/exception.hpp).
