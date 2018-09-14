@@ -91,7 +91,7 @@ Compiling IOS client:
 
 ------------------------------
 
-<h2 id="3">Server Transaction</h2>
+<h2 id="3">API Introduction</h2>
 
 ### Make server side transactions
 
