@@ -7,14 +7,14 @@
 -------------------------------
 
 # Menu
-+ [x] [Overview](#1)
-+ [x] [ENVIRONMENT](#2)
-+ [x] [Exception Handling](#3)
-+ [x] [Add Your Token Asset](#4)
-+ [x] [Server Transaction](#5)
-+ [x] [About OracleChain](#6)
-+ [x] [LICENSE](#7)
-+ [x] [THANKS](#8)
++ [Overview](#1)
++ [ENVIRONMENT](#2)
++ [API Introduction](#3)
++ [Exception Handling](#4)
++ [Add Your Token Asset](#5)
++ [About OracleChain](#6)
++ [LICENSE](#7)
++ [THANKS](#8)
 
 ------------------------------
 
@@ -87,10 +87,18 @@ Compiling IOS client:
 &emsp;3. import the project and change the configuration of backend server address according to your local PocketEOS-ShieldServer.
 
 &emsp;4. run `command + R`
+  
 
 ------------------------------
 
-<h2 id="3">Exception Handling</h2>
+<h2 id="3">Server Transaction</h2>
+
+### Make server side transactions
+
+
+------------------------------
+
+<h2 id="4">Exception Handling</h2>
 
 We provide client a more stable environment, smooth version upgrading, universal error exceptions with resolving all EOS exceptions into one standard.
 
@@ -118,7 +126,7 @@ When dealing with EOS blockchain rpc service, most of the exceptions were [CHAIN
 
 ------------------------------
 
-<h2 id="4">Add Your Token Asset</h2>
+<h2 id="5">Add Your Token Asset</h2>
 
 ### How to add your own token
 
@@ -174,15 +182,7 @@ Let's take OracleChainToken contract for example, the contract address is "octto
     asset_info.setOct_price_change_in_24h(Double.toString(oct_price_change_in_24h));
     asset_info.setOct_market_cap_usd(coinMarketTicker.getMarket_cap_usd());
     asset_info.setOct_market_cap_cny(coinMarketTicker.getMarket_cap_cny());
-    
-
-------------------------------
-
-<h2 id="5">Server Transaction</h2>
-
-### Make server side transactions
-
-
+  
 
 
 ------------------------------
