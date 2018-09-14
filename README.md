@@ -1,4 +1,4 @@
-[中文版](https://github.com/OracleChain/PocketEOS-EosProxyServer/blob/master/README-cn.md)
+[中文版](https://github.com/OracleChain/EosProxyServer/blob/master/README-cn.md)
 
 # About
 
