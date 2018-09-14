@@ -66,28 +66,11 @@ What we provide in this project：
 
 Compiling Android client:
 
-&emsp;1. install Android Studio 3.0以上 + jdk1.8 +gradle 4.1
-
-&emsp;2. clone our [git repository](https://github.com/OracleChain/PocketEOS-Android).
-
->`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git`
-
-&emsp;3. import the project and change the configuration of backend server address according to your local PocketEOS-ShieldServer.
-
-&emsp;4. run it.
+https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md
 
 Compiling IOS client:
 
-&emsp;1. install XCODE 8.0
-
-&emsp;2. clone our [git repository](https://github.com/OracleChain/PocketEOS-IOS):
-
->`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-IOS.git`
-
-&emsp;3. import the project and change the configuration of backend server address according to your local PocketEOS-ShieldServer.
-
-&emsp;4. run `command + R`
-  
+https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md
 
 ------------------------------
 
