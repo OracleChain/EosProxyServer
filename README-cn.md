@@ -1,4 +1,4 @@
-[ENGLISH VERSION](https://github.com/OracleChain/PocketEOS-EosProxyServer/blob/master/README.md)
+[ENGLISH VERSION](https://github.com/OracleChain/EosProxyServer/blob/master/README.md)
 
 # 关于
 
@@ -89,6 +89,7 @@ EOS代码中，异常主要分为三层：
 
 第三层为contract layer，可在合约中形成规范，除了给用户提供统一的错误代码外，还可定制一些适用于特定合约的特定错误代码。
 
+https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing
 
 ### FC层异常
 
