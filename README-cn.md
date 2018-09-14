@@ -43,23 +43,23 @@
 2. 安装IntelliJ IDEA + jdk1.8 + maven 4.0.0
 
 3. 下载
->`git clone https://github.com/OracleChain/PocketEOS-ShieldServer.git`
+&emsp;`git clone https://github.com/OracleChain/PocketEOS-ShieldServer.git`
 
 4. 使用IntelliJ IDEA导入到工程
 
 5. 编辑服务器配置文件 src/main/resources/application.yml.
 
->`host: redis_server_ip`
+&emsp;`host: redis_server_ip`
 
->`port: 6379`
+&emsp;`port: 6379`
 
->`password: redis_passwd`
+&emsp;`password: redis_passwd`
 
 6. 编辑服务器主动交易相关参数 src/main/java/com/oraclechain/eosio/constants/Variables.java.
 
->`public static final String eosAccount = "tx_account_name";`
+&emsp;`public static final String eosAccount = "tx_account_name";`
 
->`public static final String eosPrivateKey = "tx_private_key";`
+&emsp;`public static final String eosPrivateKey = "tx_private_key";`
 
 7. 编译运行.
 
@@ -67,11 +67,11 @@
 
 &emsp;如何编译安卓客户端:
 
->`https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md`
+&emsp;`https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md`
 
 &emsp;如何编译IOS客户端::
 
->`https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md`
+&emsp;`https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md`
 
 ------------------------------
 
