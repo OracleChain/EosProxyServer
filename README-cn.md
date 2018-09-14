@@ -69,7 +69,7 @@
 
 >`https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md`
 
-&emsp;2. 下载[repo](https://github.com/OracleChain/PocketEOS-IOS):
+如何编译IOS客户端::
 
 >`https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md`
 
