@@ -1,8 +1,8 @@
-[ENGLISH VERSION](https://github.com/OracleChain/PocketEOS-ShieldServer/blob/master/README.md)
+[ENGLISH VERSION](https://github.com/OracleChain/PocketEOS-EosProxyServer/blob/master/README.md)
 
 # 关于
 
-**PocketEOS-ShieldServer**是一个PocketEOS的后端服务器（黑盒模式），由[OracleChain团队](https://oraclechain.io)研发。
+**EosProxyServer**是一个PocketEOS的后端服务器（黑盒模式），由[OracleChain团队](https://oraclechain.io)研发。
 
 -------------------------------
 
@@ -36,14 +36,14 @@
 ------------------------------
 <h2 id="2">开发和使用环境</h2>
 
-**如何从源码编译Sheild服务器：**
+**如何从源码编译EosProxyServer服务器：**
 
 1. 准备一个redis服务器用于缓存第三方汇率
 
 2. 安装IntelliJ IDEA + jdk1.8 + maven 4.0.0
 
 3. 下载
-&emsp;`git clone https://github.com/OracleChain/PocketEOS-ShieldServer.git`
+&emsp;`git clone https://github.com/OracleChain/PocketEOS-EosProxyServer.git`
 
 4. 使用IntelliJ IDEA导入到工程
 
@@ -96,14 +96,14 @@ EOS的底层框架使用的是graphene，而graphene抛出的错误被统一定�
 
 我们这里为了把错误码统一起来，对FC error code进行了统一偏移.
 
-![](https://github.com/OracleChain/PocketEOS-ShieldServer/raw/master/screenshots/shieldserver.02.png)
+![](https://github.com/OracleChain/PocketEOS-EosProxyServer/raw/master/screenshots/shieldserver.02.png)
     
 ### 链层异常
 
 
 EOS中的主要错误都是CHAIN exception，这里我们对错误代码进行了直接[引用](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/exceptions.hpp)
 
-![](https://github.com/OracleChain/PocketEOS-ShieldServer/raw/master/screenshots/shieldserver.01.png)
+![](https://github.com/OracleChain/PocketEOS-EosProxyServer/raw/master/screenshots/shieldserver.01.png)
 
 ------------------------------
 
