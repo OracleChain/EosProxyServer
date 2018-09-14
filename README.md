@@ -64,11 +64,11 @@ What we provide in this project：
 
 **Compile PocketEOS client from source code：**
 
-Compiling Android client:
+compiling Android client:
 
 >`https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md`
 
-Compiling IOS client:
+compiling IOS client:
 
 >`https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md`
 
