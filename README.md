@@ -42,7 +42,7 @@ What we provide in this project：
 2. install IntelliJ IDEA + jdk1.8 + maven 4.0.0
 
 3. clone our git repository.
->`git clone https://github.com/OracleChain/PocketEOS-EosProxyServer.git`
+>`git clone https://github.com/OracleChain/EosProxyServer.git`
 
 4. import the project with IntelliJ IDEA
 
@@ -102,12 +102,12 @@ https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLq
 EOS is based on grephene framework, which defines the error code of FC layer in [FC expceptions file](https://github.com/EOSIO/fc/blob/df5a17ef0704d7dd96c444bfd9a70506bcfbc057/include/fc/exception/exception.hpp).
 
 We unified the error code with a offset of 3990000.
-![](https://github.com/OracleChain/PocketEOS-EosProxyServer/raw/master/screenshots/shieldserver.02.png)
+![](https://github.com/OracleChain/EosProxyServer/raw/master/screenshots/shieldserver.02.png)
 
 ### Chain Layer Exceptions
 
 When dealing with EOS blockchain rpc service, most of the exceptions were [CHAIN exceptions](https://github.com/EOSIO/eos/blob/master/libraries/chain/include/eosio/chain/exceptions.hpp), and we using it directly with some self defined code here.
-![](https://github.com/OracleChain/PocketEOS-EosProxyServer/raw/master/screenshots/shieldserver.01.png)
+![](https://github.com/OracleChain/EosProxyServer/raw/master/screenshots/shieldserver.01.png)
 
 ------------------------------
 
