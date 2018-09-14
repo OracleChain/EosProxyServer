@@ -7,14 +7,14 @@
 -------------------------------
 
 # 目录
-+ [x] [简介](#1)
-+ [x] [开发和使用环境](#2)
-+ [x] [异常捕获](#3)
-+ [x] [对接新币种](#4)
-+ [x] [自发交易](#5)
-+ [x] [有关欧链](#6)
-+ [x] [版权](#7)
-+ [x] [版权](#8)
++ [简介](#1)
++ [开发和使用环境](#2)
++ [API使用](#3)
++ [异常捕获](#4)
++ [对接新币种](#5)
++ [有关欧链](#6)
++ [版权](#7)
++ [版权](#8)
 
 ------------------------------
 
@@ -67,27 +67,11 @@
 
 如何编译安卓客户端:
 
-&emsp;1. 安装Android Studio 3.0以上 + jdk1.8 +gradle 4.1
-
-&emsp;2. [下载repo](https://github.com/OracleChain/PocketEOS-Android)
-
->`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-Android.git`
-
-&emsp;3. 导入工程，并且根据你启动PocketEOS-ShieldServer地址，修改服务器配置文件.
-
-&emsp;4. 编译运行.
-
-如何编译IOS客户端:
-
-&emsp;1. 安装 XCODE 8.0
+>`https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md`
 
 &emsp;2. 下载[repo](https://github.com/OracleChain/PocketEOS-IOS):
 
->`git clone --recurse-submodules https://github.com/OracleChain/PocketEOS-IOS.git`
-
-&emsp;3. 导入工程，并且根据你启动PocketEOS-ShieldServer地址，修改服务器配置文件.
-
-&emsp;4. 使用`command + R` 编译运行
+>`https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md`
 
 ------------------------------
 
