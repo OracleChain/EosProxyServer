@@ -200,3 +200,5 @@ OracleChain的使命是“让世界与区块链互联”，立志成为链接现
 <h2 id="8">感谢</h2>
 
 椭圆曲线算法及签名工具：[EOSCommander](https://github.com/plactal/EosCommander)，感谢PLAYERONE.ID团队的贡献。
+
+如果您觉得我们的开源项目对您有帮助，请为oraclegogogo投上一票，谢谢。
