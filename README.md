@@ -12,9 +12,10 @@
 + [API Introduction](#3)
 + [Exception Handling](#4)
 + [Add Your Token Asset](#5)
-+ [About OracleChain](#6)
-+ [LICENSE](#7)
-+ [THANKS](#8)
++ [Create Server Side Trx](#6)
++ [About OracleChain](#7)
++ [LICENSE](#8)
++ [THANKS](#9)
 
 ------------------------------
 
@@ -75,8 +76,6 @@ What we provide in this project：
 ------------------------------
 
 <h2 id="3">API Introduction</h2>
-
-### Make server side transactions
 
 
 ------------------------------
@@ -168,10 +167,17 @@ Let's take OracleChainToken contract for example, the contract address is "octto
     asset_info.setOct_market_cap_usd(coinMarketTicker.getMarket_cap_usd());
     asset_info.setOct_market_cap_cny(coinMarketTicker.getMarket_cap_cny());
   
+------------------------------
+<h2 id="6">Create Server Side Trx</h2>
 
+### Make server side transactions
+
+We can edit a trx account and its private key in src/main/java/com/oraclechain/eosio/constants/Variables.java.
+
+Then, using push_action RPC interface to handle the trx request.The trx could be any contracts calling,such as transfer or account creating.
 
 ------------------------------
-<h2 id="6">About OracleChain</h2>
+<h2 id="7">About OracleChain</h2>
 
 As the world’s first application built on an EOS ecosphere, OracleChain needs to meet the demands of the Oracle (oracle machine) ecosystem by efficiently linking blockchain technology services with various real-life scenarios, thereby delving into this immense tens of billions of dollars valuation market.
 
@@ -182,12 +188,12 @@ OracleChain will nurture and serve those blockchain applications that change the
 By achieving intra-chain and extra-chain data connectivity, we aspire to create a service provisioning platform that can most efficiently gain access to extra-chain data in the future blockchain world.
 
 
-<h2 id="7">LICENSE</h2>
+<h2 id="8">LICENSE</h2>
 
 Released under GNU/LGPL Version 3
 
-<h2 id="8">THANKS</h2>
+<h2 id="9">THANKS</h2>
 
 ECDSA and chain utility are based on the source code of [EOSCommander](https://github.com/playerone-id/EosCommander),thx for the contribution of PLAYERONE.ID team!
 
-If you found this project useful, vote us, vote oraclegogogo!!!😄
+If you found this project useful, vote us, vote oraclegogogo!!!Thank you!
