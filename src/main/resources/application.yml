@@ -2,10 +2,10 @@ server:
   port: 8080
 spring:
   redis:
-    host: redis_ip
-    port: 6739
+    host: xxx
+    port: 6688
     database: 0
-    password: redis_password
+    password: xxx
     timeout: 3000
     jedis:
       pool:

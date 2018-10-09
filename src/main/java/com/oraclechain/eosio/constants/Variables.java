@@ -34,7 +34,7 @@ public final class Variables {
     //chain
     public static final String eosChainUrl = "http://api.oraclechain.io/v1/chain/";
     public static final String eosHistoryUrl = "http://api.oraclechain.io/v1/history/";
-    public static final String eosAccount = "aaaaa";
-    public static final String eosPrivateKey = "bbbbb";
+    public static final String eosAccount = "xxx";
+    public static final String eosPrivateKey = "xxx";
 
 }

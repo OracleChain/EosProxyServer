@@ -9,11 +9,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PocketEOS-ShieldServer" />
+        <module name="eos_proxy_server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="PocketEOS-ShieldServer" target="1.8" />
+      <module name="eos_proxy_server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -14,6 +14,8 @@ import com.oraclechain.eosio.chain.SignedTransaction;
 import com.oraclechain.eosio.constants.Variables;
 import com.oraclechain.eosio.dto.CoinMarketTicker;
 import com.oraclechain.eosio.dto.UserAsset;
+import com.oraclechain.eosio.exceptions.ErrorCodeEnumChain;
+import com.oraclechain.eosio.exceptions.ExceptionsChain;
 import com.oraclechain.eosio.service.RedisService;
 import com.oraclechain.eosio.service.BlockServiceEos;
 import com.oraclechain.eosio.utils.EosErrorUtils;
@@ -125,7 +127,7 @@ public class BlockServiceEosImpl implements BlockServiceEos {
             }
             catch (Exception e)
             {
-                coinMarketTicker = new CoinMarketTicker();
+                throw new ExceptionsChain(ErrorCodeEnumChain.unknown_market_id_exception);
             }
         }
         return coinMarketTicker;

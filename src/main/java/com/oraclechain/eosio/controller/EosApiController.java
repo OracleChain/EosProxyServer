@@ -54,6 +54,14 @@ public class EosApiController {
         return EosErrorUtils.handleEosResponse(result, "abi_json_to_bin");
     }
 
+    //Deserialize binary hex to json.
+    @CrossOrigin
+    @PostMapping(value = "abi_bin_to_json")
+    public MessageResult abi_bin_to_json(@RequestBody String body) throws Exception {
+
+        String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "abi_bin_to_json", body );
+        return EosErrorUtils.handleEosResponse(result, "abi_bin_to_json");
+    }
 
     //Get information related to an account.
     @CrossOrigin
@@ -62,7 +70,6 @@ public class EosApiController {
 
         String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "get_account", body );
         return EosErrorUtils.handleEosResponse(result, "get_account");
-
     }
 
 
@@ -93,7 +100,6 @@ public class EosApiController {
 
         String result= HttpClientUtils.ocPost( Variables.eosChainUrl+ "push_transaction", body);
         return EosErrorUtils.handleEosResponse(result, "push_transaction");
-
     }
 
     //This method expects a transactionS in JSON format and will attempt to apply it to the api.
