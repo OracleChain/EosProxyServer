@@ -171,6 +171,10 @@ EOS中的主要错误都是CHAIN exception，这里我们对错误代码进行�
 
 ### 自发交易
 
+我们可以在src/main/java/com/oraclechain/eosio/constants/Variables.java中指定一个服务器自发交易的用户名和对应active私钥。
+
+然后可以使用push_action这个接口发起交易请求。该交易可以是创建账户、转账等任意合约调用。
+
 
 ------------------------------
 <h2 id="6">有关欧链</h2>
