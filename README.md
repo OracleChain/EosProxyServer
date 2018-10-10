@@ -172,7 +172,7 @@ Let's take OracleChainToken contract for example, the contract address is "octto
 
 We can edit a trx account and its private key in src/main/java/com/oraclechain/eosio/constants/Variables.java.
 
-Then, using push_action RPC interface to handle the trx request.The trx could be any contracts calling,such as transfer or account creating.
+Then, using push_action RPC interface to handle the trx request. The trx could be any contracts calling, such as transfer or account creating.
 
 ------------------------------
 <h2 id="7">About OracleChain</h2>
