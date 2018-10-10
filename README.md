@@ -168,9 +168,7 @@ Let's take OracleChainToken contract for example, the contract address is "octto
     asset_info.setOct_market_cap_cny(coinMarketTicker.getMarket_cap_cny());
   
 ------------------------------
-<h2 id="6">Create Server Side Trx</h2>
-
-### Make server side transactions
+<h2 id="6">Create Server Side Tr</h2>
 
 We can edit a trx account and its private key in src/main/java/com/oraclechain/eosio/constants/Variables.java.
 
