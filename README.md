@@ -168,13 +168,11 @@ Let's take OracleChainToken contract for example, the contract address is "octto
     asset_info.setOct_market_cap_cny(coinMarketTicker.getMarket_cap_cny());
   
 ------------------------------
-<h2 id="6">Create Server Side Trx</h2>
+<h2 id="6">Create Server Side Transactions</h2>
 
-### Make server side transactions
+We can provide a server side transaction account and its private key in src/main/java/com/oraclechain/eosio/constants/Variables.java.
 
-We can edit a trx account and its private key in src/main/java/com/oraclechain/eosio/constants/Variables.java.
-
-Then, using push_action RPC interface to handle the trx request.The trx could be any contracts calling,such as transfer or account creating.
+Then, using push_action RPC interface to handle the trx request. The trx could be any contracts calling, such as transfer or account creating.
 
 ------------------------------
 <h2 id="7">About OracleChain</h2>
