@@ -63,6 +63,10 @@
 
 7. 编译运行.
 
+8. 可以使用POSTMAN或浏览器进行测试：
+
+![](https://raw.githubusercontent.com/OracleChain/EosProxyServer/master/screenshots/get_info.png)
+
 **如何从源码编译PocketEOS客户端：**
 
 &emsp;如何编译安卓客户端:
