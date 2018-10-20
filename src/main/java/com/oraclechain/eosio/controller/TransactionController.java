@@ -32,6 +32,10 @@ public class TransactionController {
                                       @RequestParam(value = "action", required = true) String action,
                                       @RequestParam(value = "data", required = true) String data) throws Exception
     {
+        /////////////params format
+        //contract: eosio.token
+        //action:   transfer
+        //data:     {"from":"oraclechain4","to":"issaytseng11", "quantity":"0.0001 EOS", "memo":""}
         PackedTransaction packedTransaction = blockServiceEos.createTrx(
                 Variables.eosPrivateKey,
                 contract,
