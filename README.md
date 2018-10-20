@@ -63,7 +63,7 @@ What we provide in this project：
 
 7. Run it.
 
-8. Make a request for test
+8. Make a request on Browser/Postman for testing
 
 ![](https://raw.githubusercontent.com/OracleChain/EosProxyServer/master/screenshots/get_info.png)
 
