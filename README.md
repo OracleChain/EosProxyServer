@@ -67,15 +67,6 @@ What we provide in this project：
 
 ![](https://raw.githubusercontent.com/OracleChain/EosProxyServer/master/screenshots/get_info.png)
 
-**Compile PocketEOS client from source code：**
-
-&emsp;Compiling Android client:
-
->`https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md`
-
-&emsp;Compiling IOS client:
-
->`https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md`
 
 ------------------------------
 
