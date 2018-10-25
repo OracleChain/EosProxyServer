@@ -67,15 +67,6 @@
 
 ![](https://raw.githubusercontent.com/OracleChain/EosProxyServer/master/screenshots/get_info.png)
 
-**如何从源码编译PocketEOS客户端：**
-
-&emsp;如何编译安卓客户端:
-
-&emsp;`https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md`
-
-&emsp;如何编译IOS客户端::
-
-&emsp;`https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md`
 
 ------------------------------
 
