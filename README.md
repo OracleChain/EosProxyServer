@@ -23,15 +23,15 @@
 
 Pack EOS World in Mobile, Carry Blockchain Age with You！  
    
-Now we opensourced our backend server too(apply to blackbox mode).
+Now we opensourced our backend server too(available for blackbox mode of [PocketEos-Android](https://github.com/OracleChain/PocketEOS-Android)/[PocketEos-IOS](https://github.com/OracleChain/PocketEOS-IOS)).
 
 What we provide in this project：
 
-&emsp;`1.Realtime market rates: Here we request the coinmarketcap for certain token rates. The rates were based on multiple exchange market.`
+&emsp;`1.Realtime market rates: Our token rates are sourced from coinmarketcap. `
 
-&emsp;`2.General EOS error code specification without importing EOSIO code base(EOSJS/EOS C++): We provide a gobal standard error code based on eos source code,which could make better user experience, and educate more about what really happened when error occurred.`
+&emsp;`2.We provide the community with a general EOS error code specification without importing EOSIO code base(EOSJS/EOS C++): The standard error code could make better user experience, and make users have a better understanding of what really happened when something's wrong.`
 
-&emsp;`3.Server can pack you own transactions as you want, apply to scenes like:new account creating, transfer for operator, airdrop, all kinds of contract call, and etc.`
+&emsp;`3.Use our JAVA server to sign server side transactions, such as: creating new accounts, transferring for airdrops, or calling a complex contract.`
 
 ------------------------------
 <h2 id="2">ENVIRONMENT</h2>
