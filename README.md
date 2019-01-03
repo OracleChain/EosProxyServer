@@ -2,7 +2,7 @@
 
 # About
 
-**EosProxyServer** is the backend server of PocketEOS(blackbox mode),which is developed by [OracleChain.io](https://oraclechain.io).
+**EosProxyServer** is the backend server of PocketEOS, which is developed by [OracleChain.io](https://oraclechain.io).
 
 -------------------------------
 
