@@ -67,9 +67,9 @@ What does this project provide：
 
 >`public static final String eosPrivateKeyVip = "tx_private_key";`
 
-We use eosAccount/eosPrivateKey to create free account, as long as the account have tokens to create.
+We use eosAccount/eosPrivateKey to create free account or push action, as long as the account have tokens to do it.
 
-While the eosAccountVip/eosPrivateKeyVip have sufficent EOS, but it have to be verified between RPC call with an invite code or server ticket(key-value in redis in this case).
+Meanwhile, the eosAccountVip/eosPrivateKeyVip would have sufficent EOS to create vip accounts, but it have to be verified in RPC call with an invite code or server ticket(key-value in redis in this case).
 
 7. Run it.
 
