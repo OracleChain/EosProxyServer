@@ -63,6 +63,14 @@ What does this project provide：
 
 >`public static final String eosPrivateKey = "tx_private_key";`
 
+>`public static final String eosAccountVip = "tx_account_name";`
+
+>`public static final String eosPrivateKeyVip = "tx_private_key";`
+
+We use eosAccount/eosPrivateKey to create free account, as long as the account have tokens to create.
+
+While the eosAccountVip/eosPrivateKeyVip have sufficent EOS, but it have to be verified between RPC call with an invite code or server ticket(key-value in redis in this case).
+
 7. Run it.
 
 8. Make a request on Browser/Postman for testing
