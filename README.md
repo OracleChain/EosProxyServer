@@ -23,15 +23,17 @@
 
 Pack EOS World in Mobile, Carry Blockchain Age with You！  
    
-Now we opensourced our backend server too(apply to blackbox mode).
+Now we opensourced our backend server too(available for blackbox mode of [PocketEos-Android](https://github.com/OracleChain/PocketEOS-Android)/[PocketEos-IOS](https://github.com/OracleChain/PocketEOS-IOS)).
 
 What we provide in this project：
 
-&emsp;`1.Realtime market rates: Here we request the coinmarketcap for certain token rates. The rates were based on multiple exchange market.`
+&emsp;`1.Realtime market rates: Our token rates are sourced from coinmarketcap. `
 
-&emsp;`2.General EOS error code specification without importing EOSIO code base(EOSJS/EOS C++): We provide a gobal standard error code based on eos source code,which could make better user experience, and educate more about what really happened when error occurred.`
+&emsp;`2.We provide a general EOS error code SPEC without importing EOSIO code base(EOSJS/EOS C++): The standard error code could make better user experience, and make users have a better understanding of what really happened when something's wrong.`
 
-&emsp;`3.Server can pack you own transactions as you want, apply to scenes like:new account creating, transfer for operator, airdrop, all kinds of contract call, and etc.`
+&emsp;`3.Use our JAVA server to sign server side transactions, such as: creating new accounts, transferring for airdrops, or calling a complex contract.`
+
+[EOS error code SPEC](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?ouid=109245592030971145375&usp=sheets_home&ths=true) were maintained online with diffrent launguages.
 
 ------------------------------
 <h2 id="2">ENVIRONMENT</h2>
@@ -63,15 +65,10 @@ What we provide in this project：
 
 7. Run it.
 
-**Compile PocketEOS client from source code：**
+8. Make a request on Browser/Postman for testing
 
-&emsp;Compiling Android client:
+![](https://raw.githubusercontent.com/OracleChain/EosProxyServer/master/screenshots/get_info.png)
 
->`https://github.com/OracleChain/PocketEOS-Android/blob/master/README.md`
-
-&emsp;Compiling IOS client:
-
->`https://github.com/OracleChain/PocketEOS-IOS/blob/master/README.md`
 
 ------------------------------
 
@@ -170,9 +167,9 @@ Let's take OracleChainToken contract for example, the contract address is "octto
 ------------------------------
 <h2 id="6">Create Server Side Transactions</h2>
 
-We can provide a server side transaction account and its private key in src/main/java/com/oraclechain/eosio/constants/Variables.java.
+You can provide a server side transaction by define a peer of operation account and private key in src/main/java/com/oraclechain/eosio/constants/Variables.java.
 
-Then, using push_action RPC interface to handle the trx request. The trx could be any contracts calling, such as transfer or account creating.
+Then, using push_action RPC interface(in TransactionController) to handle the trx request. The trx could be any contracts calling, such as transfer or account creating.
 
 ------------------------------
 <h2 id="7">About OracleChain</h2>
