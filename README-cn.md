@@ -2,7 +2,7 @@
 
 # 关于
 
-**EosProxyServer**是PocketEOS的后端服务器，由[OracleChain团队](https://oraclechain.io)研发。
+**EosProxyServer**是PocketEOS的**完整的**后端服务器，由[OracleChain团队](https://oraclechain.io)研发。
 
 -------------------------------
 
