@@ -58,20 +58,7 @@ public class AdvancedQueryController {
     public MessageResult get_rate(@RequestParam(value = "coinmarket_id", required = true) String coinmarket_id) throws Exception
     {
 
-        String redis_key = Variables.redisKeyPrefixBlockchain+ Variables.redisKeyEosCoinmarketcapMid+ coinmarket_id;
-        CoinMarketTicker coinMarketTicker = redisService.get(redis_key, CoinMarketTicker.class);
-        if(coinMarketTicker == null){
-            try{
-                String result = HttpClientUtils.ocGet(Variables.COINMARKETCAP_TICKER+ "?convert=CNY");
-                coinMarketTicker  = JSON.parseArray(result, CoinMarketTicker.class).get(0);
-                redisService.set(redis_key, coinMarketTicker, Variables.redisCacheTimeout);
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionsChain(ErrorCodeEnumChain.unknown_market_id_exception);
-            }
-        }
-
+        ExchangeRate coinMarketTicker = blockServiceEos.getRate(coinmarket_id);
         log.info("--->get_rate success:" + coinMarketTicker.toString());
         return MessageResult.success(coinMarketTicker);
     }
@@ -87,6 +74,7 @@ public class AdvancedQueryController {
         Sparklines sparklines = new Sparklines();
         sparklines.setSparkline_eos_png(Variables.COINMARKETCAP_SPARKLINES_EOS);
         sparklines.setSparkline_oct_png(Variables.COINMARKETCAP_SPARKLINES_OCT);
+        sparklines.setSparkline_iq_png(Variables.COINMARKETCAP_SPARKLINES_IQ);
         log.info("--->get_sparklines success:" + sparklines.toString());
         return MessageResult.success(sparklines);
     }

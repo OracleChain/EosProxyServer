@@ -3,7 +3,7 @@ package com.oraclechain.eosio.dto;
 import lombok.Data;
 
 @Data
-public class CoinMarketTicker {
+public class ExchangeRate {
 //                "id": "oraclechain",
 //                "name": "OracleChain",
 //                "symbol": "OCT",
@@ -31,7 +31,7 @@ public class CoinMarketTicker {
 
     @Override
     public String toString() {
-        return "CoinMarketTicker: [id=" + id
+        return "ExchangeRate: [id=" + id
                 + ", price_usd=" + price_usd
                 + ", price_cny=" + price_cny
                 + ", percent_change_24h=" + percent_change_24h

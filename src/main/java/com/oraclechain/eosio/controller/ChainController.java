@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-public class EosApiController {
-
+public class ChainController {
 
 
 
@@ -92,23 +91,13 @@ public class EosApiController {
         return EosErrorUtils.handleEosResponse(result, "get_currency_stats");
     }
 
-
-    //This method expects a transaction in JSON format and will attempt to apply it to the api.
+    //Get balance information
     @CrossOrigin
-    @PostMapping("push_transaction")
-    public MessageResult push_transaction(@RequestBody String body) throws Exception {
+    @PostMapping("get_currency_balance")
+    public MessageResult get_currency_balance(@RequestBody String body) throws Exception {
 
-        String result= HttpClientUtils.ocPost( Variables.eosChainUrl+ "push_transaction", body);
-        return EosErrorUtils.handleEosResponse(result, "push_transaction");
-    }
-
-    //This method expects a transactionS in JSON format and will attempt to apply it to the api.
-    @CrossOrigin
-    @PostMapping("push_transactions")
-    public MessageResult push_transactions(@RequestBody String body) throws Exception {
-
-        String result= HttpClientUtils.ocPost( Variables.eosChainUrl+ "push_transactions", body);
-        return EosErrorUtils.handleEosResponse(result, "push_transactions");
+        String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "get_currency_balance", body );
+        return EosErrorUtils.handleEosResponse(result, "get_currency_balance");
     }
 
 

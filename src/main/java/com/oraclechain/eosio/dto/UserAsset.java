@@ -10,10 +10,10 @@ public class UserAsset {
         private String token_symbol;
 
         private String balance;
-
-        private String coinmarket_id;
         private String balance_usd;
         private String balance_cny;
+
+        private String coinmarket_id;
         private String asset_price_usd;
         private String asset_price_cny;
         private String asset_price_change_in_24h;

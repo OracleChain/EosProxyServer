@@ -1,6 +1,10 @@
 server:
   port: 8080
 spring:
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
   redis:
     host: xxx
     port: 6688
@@ -13,3 +17,10 @@ spring:
         max-idle: 5
         min-idle: 1
         max-wait: 5000
+logging:
+  path: /opt/java_logs/blockchain
+  file:
+    max-size: 100MB
+    max-history: 365
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"

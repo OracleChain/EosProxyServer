@@ -7,12 +7,14 @@ import lombok.Data;
 public class Sparklines {
     private String sparkline_eos_png;
     private String sparkline_oct_png;
+    private String sparkline_iq_png;
 
 
     @Override
     public String toString() {
         return "Sparklines: [sparkline_eos_png=" + sparkline_eos_png
                 + ", sparkline_oct_png=" + sparkline_oct_png
+                + ", sparkline_iq_png=" + sparkline_iq_png
                 + "]";
     }
 }

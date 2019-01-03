@@ -39,6 +39,7 @@ public enum ErrorCodeEnumChain  {
     redis_connection_exception(3900005, "redis connection error"),
     mysql_connection_exception(3900006, "mysql connection error"),
     mq_execute_exception(3900007, "mq execute error, tx will try later"),
+    unknown_new_dex_exception(3900008, "unknown new_dex id"),
 
 
     //FROM libraries/chain/include/eosio/chain/exceptions.hpp
