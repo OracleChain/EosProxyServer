@@ -31,7 +31,9 @@ What we provide in this project：
 
 &emsp;`2.We provide a general EOS error code SPEC without importing EOSIO code base(EOSJS/EOS C++): The standard error code could make better user experience, and make users have a better understanding of what really happened when something's wrong.`
 
-&emsp;`3.Use our JAVA server to sign server side transactions, such as: creating new accounts, transferring for airdrops, or calling a complex contract.`
+&emsp;`3.Use our JAVA server to create new accounts.We provide two ways to make free new account.`
+
+&emsp;`4.Use our JAVA server to sign server side transactions, such as: transferring for airdrops, or calling a complex contract.`
 
 [EOS error code SPEC](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?ouid=109245592030971145375&usp=sheets_home&ths=true) were maintained online with diffrent launguages.
 
