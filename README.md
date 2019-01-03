@@ -19,13 +19,11 @@
 
 ------------------------------
 
-<h2 id="1">Overview</h2>
-
-Pack EOS World in Mobile, Carry Blockchain Age with You！  
+<h2 id="1">Overview</h2> 
    
-Now we opensourced our backend server too(available for blackbox mode of [PocketEos-Android](https://github.com/OracleChain/PocketEOS-Android)/[PocketEos-IOS](https://github.com/OracleChain/PocketEOS-IOS)).
+This project is the full-funcional bachend server for [PocketEos-Android](https://github.com/OracleChain/PocketEOS-Android)/[PocketEos-IOS](https://github.com/OracleChain/PocketEOS-IOS). 
 
-What we provide in this project：
+What does this project provide：
 
 &emsp;`1.Realtime market rates: Our token rates are sourced from coinmarketcap. `
 
@@ -193,4 +191,4 @@ Released under GNU/LGPL Version 3
 
 ECDSA and chain utility are based on the source code of [EOSCommander](https://github.com/playerone-id/EosCommander),thx for the contribution of PLAYERONE.ID team!
 
-If you found this project useful, vote us, vote oraclegogogo!!!Thank you!
+If you found this project useful, vote us(oraclegogogo) and have fun with EOS.
