@@ -33,8 +33,6 @@ What does this project provide：
 
 &emsp;`4.Use our JAVA server to sign server side transactions, such as: transferring for airdrops, or calling a complex contract.`
 
-[EOS error code SPEC](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?ouid=109245592030971145375&usp=sheets_home&ths=true) were maintained online with diffrent launguages.
-
 ------------------------------
 <h2 id="2">ENVIRONMENT</h2>
 
