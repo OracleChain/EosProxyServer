@@ -100,7 +100,7 @@ In EOS code base, the exceptions were handled in three layers.
 3.In the CONTRACT layer, you can standardize a general error code specification in your contract code. Then you can catch the contract error code with a parser in [CODE](https://github.com/OracleChain/EosProxyServer/blob/8129b5898bde4c3446189936df0cf48cfc87bb42/src/main/java/com/oraclechain/eosio/utils/EosErrorUtils.java#L31).
 
 4.What's more, there is internationalization project keeping track of the error code specification in EOS code
-[EOSIO API ERROR CODE SPECIFICATION](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing).If you are interested in this project, you can join us and contact [us](https://t.me/IssayTzeng).
+[EOSIO API ERROR CODE SPECIFICATION](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing).If you are interested in this project, you can join us and contact with [ADMIN](https://t.me/IssayTzeng).
 
 ### FC Layer Exceptions
 
