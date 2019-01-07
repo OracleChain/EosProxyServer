@@ -21,7 +21,7 @@
 
 <h2 id="1">Overview</h2> 
    
-This project is the full-funcional bachend server for [PocketEos-Android](https://github.com/OracleChain/PocketEOS-Android)/[PocketEos-IOS](https://github.com/OracleChain/PocketEOS-IOS). 
+This project is the full-funcional backend server for [PocketEos-Android](https://github.com/OracleChain/PocketEOS-Android)/[PocketEos-IOS](https://github.com/OracleChain/PocketEOS-IOS). 
 
 What does this project provide：
 
