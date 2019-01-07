@@ -97,7 +97,7 @@ In EOS code base, the exceptions were handled in three layers.
 
 2.the CHAIN layer, handling EOS chain logic exceptions.
 
-3.In the CONTRACT layer, we can standardize a general error code specification in your contract code. And it's optional to add additional error code handling specific situations.
+3.In the CONTRACT layer, you can standardize a general error code specification in your contract code. Then you can catch the contract error code with a parser in [CODE](https://github.com/OracleChain/EosProxyServer/blob/8129b5898bde4c3446189936df0cf48cfc87bb42/src/main/java/com/oraclechain/eosio/utils/EosErrorUtils.java#L31).
 
 https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing
 
