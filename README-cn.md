@@ -88,7 +88,7 @@ EOS代码中，异常主要分为三层：
 
 第三层为contract layer，可在合约中形成规范，除了给用户提供统一的错误代码外，还可定制一些适用于特定合约的特定错误代码。如果你定制了合约层错误，可以在服务器层抓取错误信息[CODE](https://github.com/OracleChain/EosProxyServer/blob/8129b5898bde4c3446189936df0cf48cfc87bb42/src/main/java/com/oraclechain/eosio/utils/EosErrorUtils.java#L31).
 
-另外，我们发起了一个EOS错误码的国际化表单，提供给客户端使用：[EOSIO API ERROR CODE SPECIFICATION](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing).If you are interested in this project, you can join us [on telegram](https://t.me/IssayTzeng).
+另外，我们发起了一个EOS错误码的国际化项目，提供给客户端使用：[EOSIO API ERROR CODE SPECIFICATION](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing).如果你对维护这个项目，可以通过[telegram联系我们](https://t.me/IssayTzeng).
 
 
 ### FC层异常
