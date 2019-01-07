@@ -86,9 +86,10 @@ EOS代码中，异常主要分为三层：
 
 第二层为CHAIN layer，主要处理EOS逻辑代码中的异常。
 
-第三层为contract layer，可在合约中形成规范，除了给用户提供统一的错误代码外，还可定制一些适用于特定合约的特定错误代码。
+第三层为contract layer，可在合约中形成规范，除了给用户提供统一的错误代码外，还可定制一些适用于特定合约的特定错误代码。如果你定制了合约层错误，可以在我们的[统一错误错误抓取类](https://github.com/OracleChain/EosProxyServer/blob/8129b5898bde4c3446189936df0cf48cfc87bb42/src/main/java/com/oraclechain/eosio/utils/EosErrorUtils.java#L31)中解析合约错误.
 
-https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing
+另外，我们发起了一个EOS错误码的国际化项目，提供给客户端使用：[EOSIO API ERROR CODE SPECIFICATION](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing)。如果你对维护这个项目感兴趣，可以通过[telegram联系我们](https://t.me/IssayTzeng).
+
 
 ### FC层异常
 
@@ -172,7 +173,7 @@ EOS中的主要错误都是CHAIN exception，这里我们对错误代码进行�
 
 我们可以在src/main/java/com/oraclechain/eosio/constants/Variables.java中指定一个服务器自发交易的用户名和对应active私钥。
 
-然后可以使用push_action这个接口发起交易请求。该交易可以是创建账户、转账等任意合约调用。
+然后可以使用push_action/create_account/create_vip_account接口发起交易请求。
 
 
 ------------------------------

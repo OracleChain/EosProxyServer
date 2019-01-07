@@ -21,7 +21,7 @@
 
 <h2 id="1">Overview</h2> 
    
-This project is the full-funcional bachend server for [PocketEos-Android](https://github.com/OracleChain/PocketEOS-Android)/[PocketEos-IOS](https://github.com/OracleChain/PocketEOS-IOS). 
+This project is the full-funcional backend server for [PocketEos-Android](https://github.com/OracleChain/PocketEOS-Android)/[PocketEos-IOS](https://github.com/OracleChain/PocketEOS-IOS). 
 
 What does this project provide：
 
@@ -63,6 +63,14 @@ What does this project provide：
 
 >`public static final String eosPrivateKey = "tx_private_key";`
 
+>`public static final String eosAccountVip = "tx_account_name";`
+
+>`public static final String eosPrivateKeyVip = "tx_private_key";`
+
+We use eosAccount/eosPrivateKey to create free account(fixed Ram/Bandwidth) or push action, as long as the account have tokens to do it.
+
+Meanwhile, the eosAccountVip/eosPrivateKeyVip would have sufficent EOS to create vip accounts(with flexible Ram/Bandwidth), but it have to be verified in RPC call with an invite code or server ticket(key-value in redis in this case).
+
 7. Run it.
 
 8. Make a request on Browser/Postman for testing
@@ -89,9 +97,10 @@ In EOS code base, the exceptions were handled in three layers.
 
 2.the CHAIN layer, handling EOS chain logic exceptions.
 
-3.In the CONTRACT layer, we can standardize a general error code specification in your contract code. And it's optional to add additional error code handling specific situations.
+3.In the CONTRACT layer, you can standardize a general error code specification in your contract code. Then you can catch the contract error code with a parser in [CODE](https://github.com/OracleChain/EosProxyServer/blob/8129b5898bde4c3446189936df0cf48cfc87bb42/src/main/java/com/oraclechain/eosio/utils/EosErrorUtils.java#L31).
 
-https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing
+4.What's more, there is internationalization project keeping track of the error code specification in EOS code
+[EOSIO API ERROR CODE SPECIFICATION](https://docs.google.com/spreadsheets/d/1uHeNDLnCVygqYK-V01CFANuxUwgRkNkrmeLm9MLqu9c/edit?usp=sharing).If you are interested in this project, you can join us [on telegram](https://t.me/IssayTzeng).
 
 ### FC Layer Exceptions
 
@@ -169,7 +178,7 @@ Let's take OracleChainToken contract for example, the contract address is "octto
 
 You can provide a server side transaction by define a peer of operation account and private key in src/main/java/com/oraclechain/eosio/constants/Variables.java.
 
-Then, using push_action RPC interface(in TransactionController) to handle the trx request. The trx could be any contracts calling, such as transfer or account creating.
+Then, using push_action/create_account/create_vip_account RPC interface(in TransactionController) to handle the trx request. 
 
 ------------------------------
 <h2 id="7">About OracleChain</h2>
