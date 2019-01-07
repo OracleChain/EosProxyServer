@@ -58,6 +58,11 @@ public class BlockServiceEosImpl implements BlockServiceEos {
             }
         }
 
+
+        if(token_balance == null)
+        {
+            token_balance = new BigDecimal("0");
+        }
         return token_balance;
 
     }
