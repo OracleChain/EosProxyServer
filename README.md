@@ -25,7 +25,7 @@ This project is the full-funcional backend server for [PocketEos-Android](https:
 
 What does this project provide：
 
-&emsp;`1.Realtime market rates: Our token rates are sourced from coinmarketcap. `
+&emsp;`1.Realtime market rates: Our token rates are sourced from coinmarketcap and newdex. `
 
 &emsp;`2.We provide a general EOS error code SPEC without importing EOSIO code base(EOSJS/EOS C++): The standard error code could make better user experience, and make users have a better understanding of what really happened when something's wrong.`
 
