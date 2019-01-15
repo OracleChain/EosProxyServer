@@ -88,7 +88,8 @@ public class BlockServiceEosImpl implements BlockServiceEos {
             }
             catch (Exception e)
             {
-                throw new ExceptionsChain(ErrorCodeEnumChain.unknown_new_dex_exception);
+                //不再抛出错误，直接初始化为零
+                newDexTicker = new NewDexTicker();
             }
         }
         return newDexTicker;
@@ -114,7 +115,6 @@ public class BlockServiceEosImpl implements BlockServiceEos {
             {
                 //不再抛出错误，直接初始化为零
                 coinMarketTicker = new ExchangeRate();
-//                throw new ExceptionsChain(ErrorCodeEnumChain.unknown_market_id_exception);
             }
         }
         return coinMarketTicker;
@@ -171,6 +171,10 @@ public class BlockServiceEosImpl implements BlockServiceEos {
                                       String coinmarket_id) throws Exception
     {
 
+        if(contractName.equals("everipediaiq"))
+        {
+            log.info("");
+        }
 
         ExchangeRate exchangeRate = getRate(coinmarket_id);
 

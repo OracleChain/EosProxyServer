@@ -24,5 +24,16 @@ public class NewDexTicker {
     private String amount;
     private String volume;
 
+    public NewDexTicker(){
+        symbol = "";
+        contract = "";
+        currency = "";
+        last = "0.0";
+        change = "0.0";
+        high = "0.0";
+        low = "0.0";
+        amount = "0.0";
+        volume = "0.0";
+    }
 
 }

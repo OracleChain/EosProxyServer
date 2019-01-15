@@ -7,7 +7,7 @@ spring:
     add-mappings: false
   redis:
     host: xxx
-    port: 6688
+    port: 6379
     database: 0
     password: xxx
     timeout: 3000

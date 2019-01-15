@@ -65,9 +65,13 @@ public class ChainController {
     //Get information related to an account.
     @CrossOrigin
     @PostMapping("get_account")
-    public MessageResult get_account(@RequestBody String body) throws Exception {
+    public MessageResult get_account(@RequestParam(value = "name", required = true) String name) throws Exception {
 
-        String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "get_account", body );
+        StringBuilder body = new StringBuilder();
+        body.append("{\"account_name\":\"" + name + "\"}");
+
+
+        String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "get_account", body.toString() );
         return EosErrorUtils.handleEosResponse(result, "get_account");
     }
 
@@ -85,9 +89,12 @@ public class ChainController {
     //Get asset information
     @CrossOrigin
     @PostMapping("get_currency_stats")
-    public MessageResult get_currency_stats(@RequestBody String body) throws Exception {
+    public MessageResult get_currency_stats(@RequestParam(value = "code", required = true) String code,
+                                            @RequestParam(value = "symbol", required = true) String symbol) throws Exception {
 
-        String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "get_currency_stats", body );
+        StringBuilder body = new StringBuilder();
+        body.append("{\"json\":false,\"code\":\"" + code + "\",\"symbol\":\""+ symbol +"\"}");
+        String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "get_currency_stats", body.toString() );
         return EosErrorUtils.handleEosResponse(result, "get_currency_stats");
     }
 

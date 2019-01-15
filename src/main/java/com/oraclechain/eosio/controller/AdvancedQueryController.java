@@ -1,6 +1,7 @@
 package com.oraclechain.eosio.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.google.gson.Gson;
 import com.oraclechain.eosio.constants.Variables;
 import com.oraclechain.eosio.dto.*;
 import com.oraclechain.eosio.exceptions.ErrorCodeEnumChain;
@@ -31,6 +32,7 @@ public class AdvancedQueryController {
     @PostMapping("get_account_assets")
     public MessageResult get_account_assets(@Valid @RequestBody ReqAssetsInfo[] reqAssetsInfos) throws Exception
     {
+        log.info("--->get_account_assets :" + new Gson().toJson(reqAssetsInfos));
 
         RspAssetsInfo rspAssetsInfo = new RspAssetsInfo();
         for(int i = 0; i< reqAssetsInfos.length; i++){

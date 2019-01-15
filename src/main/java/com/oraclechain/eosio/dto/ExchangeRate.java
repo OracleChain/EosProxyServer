@@ -29,6 +29,14 @@ public class ExchangeRate {
     private String market_cap_usd;
     private String market_cap_cny;
 
+    public ExchangeRate(){
+        id="0";
+        price_usd="0.0";
+        price_cny="0.0";
+        percent_change_24h="0.0";
+        market_cap_usd="0.0";
+        market_cap_cny="0.0";
+    }
     @Override
     public String toString() {
         return "ExchangeRate: [id=" + id
