@@ -52,6 +52,7 @@ public class AdvancedQueryController {
 
 
 
+
     //Get latest information related to a node
     @CrossOrigin
     @PostMapping("get_rate")
