@@ -95,7 +95,7 @@ public class BlockServiceEosImpl implements BlockServiceEos {
         return newDexTicker;
     }
 
-    private ExchangeRate getBaseTicker(String coinmarket_id) throws Exception
+    public ExchangeRate getBaseTicker(String coinmarket_id) throws Exception
     {
 
         StringBuilder req_url = new StringBuilder();

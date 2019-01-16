@@ -7,6 +7,7 @@ import java.math.BigDecimal;
 
 public interface BlockServiceEos {
 
+    ExchangeRate getBaseTicker(String coinmarket_id) throws Exception;
 
     ExchangeRate getRate(String external_id) throws Exception;
 

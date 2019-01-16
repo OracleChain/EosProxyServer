@@ -3,6 +3,7 @@
 .DS_Store
 test
 target
+.idea
 
 # Log file
 *.log
