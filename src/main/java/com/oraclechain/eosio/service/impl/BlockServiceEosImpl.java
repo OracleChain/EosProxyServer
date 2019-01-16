@@ -88,7 +88,9 @@ public class BlockServiceEosImpl implements BlockServiceEos {
             }
             catch (Exception e)
             {
-                throw new ExceptionsChain(ErrorCodeEnumChain.unknown_new_dex_exception);
+                //不再抛出错误，直接初始化为零
+                newDexTicker = new NewDexTicker();
+//                throw new ExceptionsChain(ErrorCodeEnumChain.unknown_new_dex_exception);
             }
         }
         return newDexTicker;
