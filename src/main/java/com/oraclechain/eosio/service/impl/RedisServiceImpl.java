@@ -53,7 +53,7 @@ public class RedisServiceImpl implements RedisService {
     @Override
     public void set(String key, Object value, long expireTime)
     {
-        redisTemplate.opsForValue().set(key,JsonUtils.objectToJson(value),expireTime,TimeUnit.SECONDS );
+        redisTemplate.opsForValue().set(key, JsonUtils.objectToJson(value), expireTime, TimeUnit.SECONDS );
     }
 
 

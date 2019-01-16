@@ -44,8 +44,8 @@ public class TransactionController {
 
 
     //This method expects a transaction in JSON format and will attempt to apply it to the api.
-    @CrossOrigin
-    @PostMapping("push_action")
+//    @CrossOrigin
+//    @PostMapping("push_action")
     public MessageResult push_action(@RequestParam(value = "contract", required = true) String contract,
                                       @RequestParam(value = "action", required = true) String action,
                                       @RequestParam(value = "data", required = true) String data) throws Exception
@@ -118,7 +118,6 @@ public class TransactionController {
         if (nonce.length() != 32 || active_key.length() != 53  || owner_key.length() != 53 ) {
             throw new ExceptionsChain(ErrorCodeEnumChain.request_format_exception);
         }
-
 
         //对Personal服务器nonce验证
         String redis_key = Variables.redisKeyPrefixPersonalHead + Variables.redisKeyPrefixPersonalTailFreeAccount;
