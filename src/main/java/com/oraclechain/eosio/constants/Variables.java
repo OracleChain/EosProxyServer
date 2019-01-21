@@ -13,7 +13,6 @@ public final class Variables {
     //区块链常量
     public static final Integer TX_EXPIRATION_IN_MILSEC = 30000;
 
-
     //THIRD PARTY
     public static final String COINMARKETCAP_ID_EOS = "eos";
     public static final String COINMARKETCAP_TICKER = "https://api.coinmarketcap.com/v1/ticker/";

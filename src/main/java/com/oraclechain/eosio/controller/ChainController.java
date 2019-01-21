@@ -71,6 +71,14 @@ public class ChainController {
         return EosErrorUtils.handleEosResponse(result, "get_account");
     }
 
+    //Get information related to an account.
+    @CrossOrigin
+    @PostMapping("get_accounts")
+    public MessageResult get_accounts(@RequestBody String body) throws Exception {
+
+        String result= HttpClientUtils.ocPost(Variables.eosChainUrl+ "get_accounts", body );
+        return EosErrorUtils.handleEosResponse(result, "get_accounts");
+    }
 
     //Fetch smart contract data from an account.
     @CrossOrigin
